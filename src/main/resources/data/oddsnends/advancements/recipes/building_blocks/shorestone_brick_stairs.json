@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_shorestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oddsnends:shorestone_bricks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "oddsnends:shorestone_brick_stairs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_shorestone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oddsnends:shorestone_brick_stairs"
+    ]
+  },
+  "sends_telemetry_event": false
+}

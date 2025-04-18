@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "oddsnends:block/rage_lantern"
+    },
+    "hanging=true": {
+      "model": "oddsnends:block/rage_lantern_hanging"
+    }
+  }
+}

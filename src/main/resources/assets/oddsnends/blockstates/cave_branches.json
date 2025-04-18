@@ -1,0 +1,112 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "north": "true"
+      },
+      "apply": {
+        "model": "oddsnends:block/cave_branches"
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": {
+        "model": "oddsnends:block/cave_branches"
+      }
+    },
+    {
+      "when": {
+        "east": "true"
+      },
+      "apply": {
+        "model": "oddsnends:block/cave_branches",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": {
+        "model": "oddsnends:block/cave_branches",
+        "y": 90
+      }
+    },
+    {
+      "when": {
+        "south": "true"
+      },
+      "apply": {
+        "model": "oddsnends:block/cave_branches",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": {
+        "model": "oddsnends:block/cave_branches",
+        "y": 180
+      }
+    },
+    {
+      "when": {
+        "west": "true"
+      },
+      "apply": {
+        "model": "oddsnends:block/cave_branches",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": {
+        "model": "oddsnends:block/cave_branches",
+        "y": 270
+      }
+    },
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": {
+        "model": "oddsnends:block/cave_branches_up",
+        "x": 270
+      }
+    },
+    {
+      "when": {
+        "east": "false",
+        "north": "false",
+        "south": "false",
+        "up": "false",
+        "west": "false"
+      },
+      "apply": {
+        "model": "oddsnends:block/cave_branches_up",
+        "x": 270
+      }
+    }
+  ]
+}

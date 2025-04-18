@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "oddsnends:block/suspicious_quartz_sand_3"
+  }
+}

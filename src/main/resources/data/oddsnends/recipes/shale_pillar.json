@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "O": {
+      "item": "oddsnends:shale_brick_slab"
+    }
+  },
+  "pattern": [
+    "O",
+    "O"
+  ],
+  "result": {
+    "item": "oddsnends:shale_pillar"
+  },
+  "show_notification": true
+}

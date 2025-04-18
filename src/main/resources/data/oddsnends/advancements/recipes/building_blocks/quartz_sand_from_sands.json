@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_sand_type": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:sand"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "oddsnends:quartz_sand_from_sands"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_sand_type",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oddsnends:quartz_sand_from_sands"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,574 @@
+{
+  "variants": {
+    "facing=east,half=bottom,shape=inner_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "y": 270,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=east,half=bottom,shape=inner_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "weight": 30
+      }
+    ],
+    "facing=east,half=bottom,shape=outer_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "y": 270,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=east,half=bottom,shape=outer_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "weight": 30
+      }
+    ],
+    "facing=east,half=bottom,shape=straight": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs",
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs",
+        "weight": 30
+      }
+    ],
+    "facing=east,half=top,shape=inner_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "x": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "x": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=east,half=top,shape=inner_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 90,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=east,half=top,shape=outer_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "x": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "x": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=east,half=top,shape=outer_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 90,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=east,half=top,shape=straight": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs",
+        "x": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs",
+        "x": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=north,half=bottom,shape=inner_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "y": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=north,half=bottom,shape=inner_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "y": 270,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=north,half=bottom,shape=outer_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "y": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=north,half=bottom,shape=outer_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "y": 270,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=north,half=bottom,shape=straight": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs",
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs",
+        "y": 270,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=north,half=top,shape=inner_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 270,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=north,half=top,shape=inner_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "x": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "x": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=north,half=top,shape=outer_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 270,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=north,half=top,shape=outer_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "x": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "x": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=north,half=top,shape=straight": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs",
+        "x": 180,
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs",
+        "x": 180,
+        "y": 270,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=south,half=bottom,shape=inner_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "weight": 30
+      }
+    ],
+    "facing=south,half=bottom,shape=inner_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "y": 90,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=south,half=bottom,shape=outer_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "weight": 30
+      }
+    ],
+    "facing=south,half=bottom,shape=outer_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "y": 90,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=south,half=bottom,shape=straight": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs",
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs",
+        "y": 90,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=south,half=top,shape=inner_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 90,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=south,half=top,shape=inner_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=south,half=top,shape=outer_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 90,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=south,half=top,shape=outer_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=south,half=top,shape=straight": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs",
+        "x": 180,
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs",
+        "x": 180,
+        "y": 90,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=west,half=bottom,shape=inner_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "y": 90,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=west,half=bottom,shape=inner_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "y": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=west,half=bottom,shape=outer_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "y": 90,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=west,half=bottom,shape=outer_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "y": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=west,half=bottom,shape=straight": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs",
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs",
+        "y": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=west,half=top,shape=inner_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=west,half=top,shape=inner_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_inner",
+        "x": 180,
+        "y": 270,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=west,half=top,shape=outer_left": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=west,half=top,shape=outer_right": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs_outer",
+        "x": 180,
+        "y": 270,
+        "uvlock": true,
+        "weight": 30
+      }
+    ],
+    "facing=west,half=top,shape=straight": [
+      {
+        "model": "oddsnends:block/manastone_brick_stairs",
+        "x": 180,
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_stairs",
+        "x": 180,
+        "y": 180,
+        "uvlock": true,
+        "weight": 30
+      }
+    ]
+  }
+}

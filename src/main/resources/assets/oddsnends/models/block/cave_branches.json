@@ -1,0 +1,32 @@
+{
+	"credit": "Made with Blockbench",
+	"ambientocclusion": false,
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"0": "oddsnends:block/cave_branches_body",
+		"1": "oddsnends:block/cave_branches_head",
+		"particle": "oddsnends:block/cave_branches_body"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0.9],
+			"to": [16, 16, 0.9],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 0.1]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0, -8, 0.9],
+			"to": [16, 0, 0.9],
+			"shade": false,
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 0.1]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 8], "texture": "#1", "cullface": "down"},
+				"south": {"uv": [0, 0, 16, 8], "texture": "#1", "cullface": "down"}
+			}
+		}
+	]
+}

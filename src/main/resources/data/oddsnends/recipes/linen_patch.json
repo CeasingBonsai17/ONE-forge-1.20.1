@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "O": {
+      "tag": "oddsnends:weaves_to_linen_patch"
+    },
+    "N": {
+      "item": "oddsnends:flax_fibers"
+    }
+  },
+  "pattern": [
+    "ON",
+    "NO"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oddsnends:linen_patch"
+  },
+  "show_notification": true
+}

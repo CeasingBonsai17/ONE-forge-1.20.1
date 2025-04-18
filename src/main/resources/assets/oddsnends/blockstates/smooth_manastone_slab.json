@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oddsnends:block/smooth_manastone_slab"
+    },
+    "type=double": {
+      "model": "oddsnends:block/double_smooth_manastone_slab"
+    },
+    "type=top": {
+      "model": "oddsnends:block/smooth_manastone_slab_top"
+    }
+  }
+}

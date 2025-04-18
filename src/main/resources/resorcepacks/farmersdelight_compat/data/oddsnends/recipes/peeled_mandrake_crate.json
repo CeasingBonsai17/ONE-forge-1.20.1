@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oddsnends:peeled_mandrake"
+    }
+  },
+  "result": {
+    "item": "oddsnends:peeled_mandrake_crate"
+  },
+  "show_notification": true
+}

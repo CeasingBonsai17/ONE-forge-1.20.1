@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "oddsnends:block/quartz_glass"
+      },
+      {
+        "model": "oddsnends:block/quartz_glass_0"
+      },
+      {
+        "model": "oddsnends:block/quartz_glass_1"
+      }
+    ]
+  }
+}

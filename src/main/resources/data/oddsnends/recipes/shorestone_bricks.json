@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "O": {
+      "item": "oddsnends:shorestone"
+    }
+  },
+  "pattern": [
+    "OO",
+    "OO"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oddsnends:shorestone_bricks"
+  },
+  "show_notification": true
+}

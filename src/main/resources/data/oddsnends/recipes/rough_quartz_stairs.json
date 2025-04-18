@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "O": {
+      "item": "oddsnends:rough_quartz"
+    }
+  },
+  "pattern": [
+    "O  ",
+    "OO ",
+    "OOO"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oddsnends:rough_quartz_stairs"
+  },
+  "show_notification": true
+}

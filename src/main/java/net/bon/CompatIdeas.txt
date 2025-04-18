@@ -1,0 +1,20 @@
+MODS
+
+Farmer's Delight
+(Apple Sauce)
+
+Jaden's Nether Expansion
+(Red Sporeshroom, Brown Sporeshroom)
+
+Nature's Spirit
+(Wild Turnips, Shiitake Sporeshroom[JNE also needed])
+
+Overweight Farming
+(Overweight Baked Apple)
+
+Pearfection
+(Lampear Slices, Copper Lampear Slices, /appear and appear slices/)
+(Lampear Blossoms, Growing Callery Leaves)
+
+Haunted Harvest
+(Wild Corn, Grim Apple Slices)

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "oddsnends:block/rough_quartz_top",
+    "side": "oddsnends:block/rough_quartz"
+  }
+}

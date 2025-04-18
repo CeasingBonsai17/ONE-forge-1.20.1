@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "type=bottom": [
+      {
+        "model": "oddsnends:block/manastone_brick_slab",
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_slab",
+        "weight": 30
+      }
+    ],
+    "type=double": [
+    {
+      "model": "oddsnends:block/manastone_bricks",
+      "weight": 60
+    },
+{
+  "model": "oddsnends:block/squared_manastone_bricks",
+  "weight": 30
+}
+],
+    "type=top": [
+    {
+      "model": "oddsnends:block/manastone_brick_slab_top",
+      "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_brick_slab_top",
+        "weight": 30
+      }
+    ]
+  }
+}

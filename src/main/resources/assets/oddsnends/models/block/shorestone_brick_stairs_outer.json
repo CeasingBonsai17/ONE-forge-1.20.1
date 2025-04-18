@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "oddsnends:block/shorestone_bricks",
+    "side": "oddsnends:block/shorestone_bricks",
+    "top": "oddsnends:block/shorestone_bricks"
+  }
+}

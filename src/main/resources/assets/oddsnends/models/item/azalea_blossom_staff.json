@@ -1,0 +1,6 @@
+{
+  "parent": "oddsnends:item/template_blossom_staff",
+  "textures": {
+    "layer0": "oddsnends:item/azalea_blossom_staff"
+  }
+}

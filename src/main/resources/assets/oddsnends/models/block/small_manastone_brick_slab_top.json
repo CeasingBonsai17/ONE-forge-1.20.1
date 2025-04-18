@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "oddsnends:block/small_manastone_bricks",
+    "side": "oddsnends:block/small_manastone_bricks",
+    "top": "oddsnends:block/small_manastone_bricks"
+  }
+}

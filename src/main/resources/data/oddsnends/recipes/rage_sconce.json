@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "R": {
+      "tag": "oddsnends:rage_fire_base_blocks"
+    },
+    "C": [
+      {
+        "item": "minecraft:coal"
+      },
+      {
+        "item": "minecraft:charcoal"
+      }
+    ]
+  },
+  "pattern": [
+    "C",
+    "S",
+    "R"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oddsnends:rage_sconce"
+  },
+  "show_notification": true
+}

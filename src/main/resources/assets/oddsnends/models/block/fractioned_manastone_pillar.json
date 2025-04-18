@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "oddsnends:block/smooth_manastone",
+    "side": "oddsnends:block/manastone_pillar_fractioned"
+  }
+}

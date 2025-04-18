@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oddsnends:algae"
+    }
+  },
+  "result": {
+    "item": "oddsnends:algae_crate"
+  },
+  "show_notification": true
+}

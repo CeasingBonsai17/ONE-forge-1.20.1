@@ -1,0 +1,167 @@
+{
+  "multipart": [
+    {
+      "when": {
+        "up": "true"
+      },
+      "apply": [
+        {
+        "model": "oddsnends:block/manastone_brick_wall_post",
+          "weight": 60
+      },
+        {
+        "model": "oddsnends:block/squared_manastone_brick_wall_post",
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "when": {
+        "north": "low"
+      },
+      "apply": [
+        {
+        "model": "oddsnends:block/manastone_brick_wall_side",
+         "uvlock": true,
+         "weight": 60
+      },
+        {
+        "model": "oddsnends:block/squared_manastone_brick_wall_side",
+          "uvlock": true,
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "when": {
+        "east": "low"
+      },
+      "apply": [
+        {
+        "model": "oddsnends:block/manastone_brick_wall_side",
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+        },
+          {
+          "model": "oddsnends:block/squared_manastone_brick_wall_side",
+            "y": 90,
+          "uvlock": true,
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "when": {
+        "south": "low"
+      },
+      "apply": [
+        {
+        "model": "oddsnends:block/manastone_brick_wall_side",
+        "y": 180,
+        "uvlock": true,
+          "weight": 60
+       },
+         {
+          "model": "oddsnends:block/squared_manastone_brick_wall_side",
+           "y": 180,
+          "uvlock": true,
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "when": {
+        "west": "low"
+      },
+      "apply": [
+      {
+        "model": "oddsnends:block/manastone_brick_wall_side",
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+        {
+          "model": "oddsnends:block/squared_manastone_brick_wall_side",
+          "y": 270,
+          "uvlock": true,
+          "weight": 30
+        }
+      ]
+    },
+    {
+      "when": {
+        "north": "tall"
+      },
+      "apply": [
+      {
+        "model": "oddsnends:block/manastone_brick_wall_side_tall",
+        "uvlock": true,
+        "weight": 60
+      },
+    {
+      "model": "oddsnends:block/squared_manastone_brick_wall_side_tall",
+      "uvlock": true,
+      "weight": 30
+        }
+      ]
+    },
+    {
+      "when": {
+        "east": "tall"
+      },
+      "apply": [
+      {
+        "model": "oddsnends:block/manastone_brick_wall_side_tall",
+        "y": 90,
+        "uvlock": true,
+        "weight": 60
+      },
+    {
+      "model": "oddsnends:block/squared_manastone_brick_wall_side_tall",
+      "y": 90,
+      "uvlock": true,
+      "weight": 30
+       }
+     ]
+    },
+    {
+      "when": {
+        "south": "tall"
+      },
+      "apply": [
+      {
+        "model": "oddsnends:block/manastone_brick_wall_side_tall",
+        "y": 180,
+        "uvlock": true,
+        "weight": 60
+      },
+    {
+      "model": "oddsnends:block/squared_manastone_brick_wall_side_tall",
+      "y": 180,
+      "uvlock": true,
+      "weight": 30
+      }
+     ]
+    },
+    {
+      "when": {
+        "west": "tall"
+      },
+      "apply": [
+      {
+        "model": "oddsnends:block/manastone_brick_wall_side_tall",
+        "y": 270,
+        "uvlock": true,
+        "weight": 60
+      },
+    {
+      "model": "oddsnends:block/squared_manastone_brick_wall_side_tall",
+      "y": 270,
+      "uvlock": true,
+      "weight": 30
+    }
+  ]
+    }
+  ]
+}

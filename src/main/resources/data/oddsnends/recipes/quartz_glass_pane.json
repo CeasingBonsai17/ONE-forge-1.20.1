@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "oddsnends:quartz_glass"
+    }
+  },
+  "pattern": [
+    "OOO",
+    "OOO"
+  ],
+  "result": {
+    "count": 16,
+    "item": "oddsnends:quartz_glass_pane"
+  },
+  "show_notification": true
+}

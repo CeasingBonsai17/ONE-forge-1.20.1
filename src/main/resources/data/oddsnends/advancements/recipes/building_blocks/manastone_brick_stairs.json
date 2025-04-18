@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_manastone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oddsnends:manastone_bricks"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "oddsnends:manastone_brick_stairs"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_manastone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "oddsnends:manastone_brick_stairs"
+    ]
+  },
+  "sends_telemetry_event": false
+}

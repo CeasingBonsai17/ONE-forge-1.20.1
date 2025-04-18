@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oddsnends:flax_fiber_bag"
+    }
+  ],
+  "result": {
+    "counts": 9,
+    "item": "oddsnends:flax_fibers"
+  }
+}

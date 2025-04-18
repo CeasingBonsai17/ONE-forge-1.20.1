@@ -1,0 +1,14 @@
+{
+  "type": "oddsnends:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 1.0
+    },
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/simple_dungeon"
+    }
+  ],
+  "item": "oddsnends:mandrake_seeds"
+}

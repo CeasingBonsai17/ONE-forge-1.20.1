@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "oddsnends:block/shale_pillar_top",
+    "side": "oddsnends:block/chiseled_shale_pillar"
+  }
+}

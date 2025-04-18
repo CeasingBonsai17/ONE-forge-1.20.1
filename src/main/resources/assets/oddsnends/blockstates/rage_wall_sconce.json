@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "oddsnends:block/rage_wall_sconce"
+    },
+    "facing=north": {
+      "model": "oddsnends:block/rage_wall_sconce",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "oddsnends:block/rage_wall_sconce",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "oddsnends:block/rage_wall_sconce",
+      "y": 180
+    }
+  }
+}

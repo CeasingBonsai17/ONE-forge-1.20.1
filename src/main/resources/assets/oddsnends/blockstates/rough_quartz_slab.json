@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oddsnends:block/rough_quartz_slab"
+    },
+    "type=double": {
+      "model": "oddsnends:block/rough_quartz"
+    },
+    "type=top": {
+      "model": "oddsnends:block/rough_quartz_slab_top"
+    }
+  }
+}

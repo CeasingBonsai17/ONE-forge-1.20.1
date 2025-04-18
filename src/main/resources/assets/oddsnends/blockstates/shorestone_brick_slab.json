@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oddsnends:block/shorestone_brick_slab"
+    },
+    "type=double": {
+      "model": "oddsnends:block/shorestone_bricks"
+    },
+    "type=top": {
+      "model": "oddsnends:block/shorestone_brick_slab_top"
+    }
+  }
+}

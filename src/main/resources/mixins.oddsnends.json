@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "net.bon.oddsnends.mixin",
+  "refmap": "mixins.oddsnends.refmap.json",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "mixins": [
+    "BaseFireBlockMixin"
+  ],
+  "client": [],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

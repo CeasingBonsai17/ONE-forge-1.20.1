@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "oddsnends:block/manastone",
+    "side": "oddsnends:block/manastone",
+    "top": "oddsnends:block/manastone"
+  }
+}

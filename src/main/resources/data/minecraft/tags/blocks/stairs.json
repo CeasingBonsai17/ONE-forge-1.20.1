@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "oddsnends:manastone_stairs",
+    "oddsnends:manastone_brick_stairs",
+    "oddsnends:small_manastone_brick_stairs",
+    "oddsnends:shale_brick_stairs",
+    "oddsnends:rough_quartz_stairs",
+    "oddsnends:shorestone_brick_stairs"
+  ]
+}

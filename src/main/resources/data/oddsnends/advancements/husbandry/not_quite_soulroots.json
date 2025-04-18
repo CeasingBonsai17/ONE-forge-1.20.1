@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "oddsnends:mandrake"
+    },
+    "title": {
+      "translate": "advancements.husbandry.not_quite_soulroots.title"
+    },
+    "description": {
+      "translate": "advancements.husbandry.not_quite_soulroots.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "has_mandrake": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oddsnends:mandrake"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_mandrake"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "oddsnends:block/polished_shale",
+    "side": "oddsnends:block/polished_shale",
+    "top": "oddsnends:block/polished_shale"
+  }
+}

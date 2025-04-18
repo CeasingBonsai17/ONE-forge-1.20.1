@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "O": {
+      "item": "oddsnends:shale"
+    }
+  },
+  "pattern": [
+    "OO",
+    "OO"
+  ],
+  "result": {
+    "count": 1,
+    "item": "oddsnends:polished_shale"
+  },
+  "show_notification": true
+}

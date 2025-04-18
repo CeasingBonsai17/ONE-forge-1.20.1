@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oddsnends:block/shale_brick_slab"
+    },
+    "type=double": {
+      "model": "oddsnends:block/shale_bricks"
+    },
+    "type=top": {
+      "model": "oddsnends:block/shale_brick_slab_top"
+    }
+  }
+}

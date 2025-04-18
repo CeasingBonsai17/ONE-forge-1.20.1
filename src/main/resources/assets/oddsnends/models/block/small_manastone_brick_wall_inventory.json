@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "oddsnends:block/small_manastone_bricks"
+  }
+}

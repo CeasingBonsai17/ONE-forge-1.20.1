@@ -1,0 +1,7 @@
+{
+  "parent": "oddsnends:block/template_potted_flax",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "plant": "oddsnends:block/potted_dried_flax"
+  }
+}

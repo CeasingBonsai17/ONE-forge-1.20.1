@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "shorestone",
+  "key": {
+    "O": {
+      "item": "minecraft:cobblestone"
+    },
+    "N": {
+      "item": "minecraft:granite"
+    }
+  },
+    "pattern": [
+      "ON",
+      "NO"
+    ],
+    "result": {
+      "count": 1,
+      "item": "oddsnends:shorestone"
+    },
+    "show_notification": true
+}

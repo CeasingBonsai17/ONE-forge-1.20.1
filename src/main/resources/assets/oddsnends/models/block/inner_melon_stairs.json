@@ -1,0 +1,9 @@
+{
+  "parent": "oddsnends:block/inner_gourd_stairs",
+  "textures": {
+    "bottom": "minecraft:block/melon_top",
+    "side": "minecraft:block/melon_side",
+    "top": "minecraft:block/melon_top",
+    "inner": "oddsnends:block/melon_inner"
+  }
+}

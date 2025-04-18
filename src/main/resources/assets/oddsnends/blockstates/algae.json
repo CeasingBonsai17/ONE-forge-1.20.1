@@ -1,0 +1,82 @@
+{
+  "variants": {
+    "facing=down": [
+      {
+        "model": "oddsnends:block/algae_down",
+        "x": 180,
+        "weight": 50
+      },
+      {
+        "model": "oddsnends:block/algae_down",
+        "y": 90,
+        "x": 180,
+        "weight": 50
+      }
+    ],
+    "facing=east": [
+      {
+        "model": "oddsnends:block/algae_east",
+        "x": 90,
+        "y": 90,
+        "weight": 50
+      },
+      {
+        "model": "oddsnends:block/algae_east_1",
+        "x": 90,
+        "y": 90,
+        "weight": 50
+      }
+    ],
+    "facing=north": [
+      {
+        "model": "oddsnends:block/algae_north",
+        "x": 90,
+        "weight": 50
+      },
+      {
+        "model": "oddsnends:block/algae_north_1",
+        "x": 90,
+        "weight": 50
+      }
+    ],
+    "facing=south": [
+      {
+        "model": "oddsnends:block/algae_north",
+        "x": 90,
+        "y": 180,
+        "weight": 50
+      },
+      {
+        "model": "oddsnends:block/algae_north_1",
+        "x": 90,
+        "y": 180,
+        "weight": 50
+      }
+    ],
+    "facing=up": [
+      {
+        "model": "oddsnends:block/algae",
+        "weight": 50
+      },
+      {
+        "model": "oddsnends:block/algae",
+        "y": 90,
+        "weight": 50
+      }
+    ],
+    "facing=west": [
+      {
+      "model": "oddsnends:block/algae_east",
+        "x": 90,
+        "y": 270,
+        "weight": 50
+      },
+      {
+        "model": "oddsnends:block/algae_east_1",
+        "x": 90,
+        "y": 270,
+        "weight": 50
+      }
+    ]
+  }
+}

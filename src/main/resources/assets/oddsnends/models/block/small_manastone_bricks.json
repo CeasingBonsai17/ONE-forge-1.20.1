@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "oddsnends:block/small_manastone_bricks"
+  }
+}

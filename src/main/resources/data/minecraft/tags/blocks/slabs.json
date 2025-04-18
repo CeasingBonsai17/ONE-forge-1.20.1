@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "oddsnends:manastone_slab",
+    "oddsnends:manastone_brick_slab",
+    "oddsnends:small_manastone_brick_slab",
+    "oddsnends:smooth_manastone_slab",
+    "oddsnends:shale_brick_slab",
+    "oddsnends:rough_quartz_slab",
+    "oddsnends:shorestone_brick_slab"
+  ]
+}

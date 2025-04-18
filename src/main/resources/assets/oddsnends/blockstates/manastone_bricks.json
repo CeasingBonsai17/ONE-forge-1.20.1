@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "oddsnends:block/manastone_bricks",
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_bricks",
+        "weight": 30
+      }
+    ]
+  }
+}

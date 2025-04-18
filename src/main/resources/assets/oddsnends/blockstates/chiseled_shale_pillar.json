@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "oddsnends:block/chiseled_shale_pillar",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "oddsnends:block/chiseled_shale_pillar",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "oddsnends:block/chiseled_shale_pillar",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "oddsnends:block/chiseled_shale_pillar",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "oddsnends:block/chiseled_shale_pillar"
+    },
+    "facing=west": {
+      "model": "oddsnends:block/chiseled_shale_pillar",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

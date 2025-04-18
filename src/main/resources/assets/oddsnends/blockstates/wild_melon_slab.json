@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oddsnends:block/wild_melon_slab"
+    },
+    "type=double": {
+      "model": "oddsnends:block/wild_melon"
+    },
+    "type=top": {
+      "model": "oddsnends:block/wild_melon_slab_top"
+    }
+  }
+}

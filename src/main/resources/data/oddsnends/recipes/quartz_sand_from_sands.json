@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "O": {
+      "item": "minecraft:quartz"
+    },
+    "w": {
+      "tag": "minecraft:sand"
+    }
+  },
+  "pattern": [
+    "wO",
+    "Ow"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oddsnends:quartz_sand"
+  },
+  "show_notification": true
+}

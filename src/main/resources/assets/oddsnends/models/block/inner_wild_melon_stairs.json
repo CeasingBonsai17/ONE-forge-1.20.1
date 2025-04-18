@@ -1,0 +1,9 @@
+{
+  "parent": "oddsnends:block/inner_gourd_stairs",
+  "textures": {
+    "bottom": "oddsnends:block/wild_melon_top",
+    "side": "oddsnends:block/wild_melon_side",
+    "top": "oddsnends:block/wild_melon_top",
+    "inner": "oddsnends:block/wild_melon_inner"
+  }
+}

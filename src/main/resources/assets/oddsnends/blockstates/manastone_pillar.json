@@ -1,0 +1,55 @@
+{
+  "variants": {
+    "axis=x": [
+      {
+        "model": "oddsnends:block/manastone_pillar",
+        "x": 90,
+        "y": 90,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_pillar",
+        "x": 90,
+        "y": 90,
+        "weight": 20
+      },
+      {
+        "model": "oddsnends:block/fractioned_manastone_pillar",
+        "x": 90,
+        "y": 90,
+        "weight": 60
+      }
+    ],
+    "axis=y": [
+      {
+        "model": "oddsnends:block/manastone_pillar",
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_pillar",
+        "weight": 20
+      },
+      {
+        "model": "oddsnends:block/fractioned_manastone_pillar",
+        "weight": 60
+      }
+      ],
+    "axis=z": [
+      {
+        "model": "oddsnends:block/manastone_pillar",
+        "x": 90,
+        "weight": 60
+      },
+      {
+        "model": "oddsnends:block/squared_manastone_pillar",
+        "x": 90,
+        "weight": 20
+      },
+      {
+        "model": "oddsnends:block/fractioned_manastone_pillar",
+        "x": 90,
+        "weight": 60
+      }
+    ]
+  }
+}

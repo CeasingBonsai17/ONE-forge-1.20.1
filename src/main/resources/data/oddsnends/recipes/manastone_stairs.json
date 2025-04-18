@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "O": {
+      "item": "oddsnends:manastone"
+    }
+  },
+  "pattern": [
+    "O  ",
+    "OO ",
+    "OOO"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oddsnends:manastone_stairs"
+  },
+  "show_notification": true
+}

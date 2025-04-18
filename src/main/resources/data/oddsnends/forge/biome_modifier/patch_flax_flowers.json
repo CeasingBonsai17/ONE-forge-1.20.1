@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#oddsnends:spawns_flax_flowers",
+  "features": "oddsnends:patch_flax_flowers",
+  "step": "vegetal_decoration"
+}

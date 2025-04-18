@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x":{
+      "model": "oddsnends:block/shale",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y":{
+      "model": "oddsnends:block/shale"
+    },
+    "axis=z":{
+      "model": "oddsnends:block/shale",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "quartz",
+  "ingredients": [
+    {
+      "tag": "oddsnends:breaks_down_to_quartz"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "minecraft:quartz"
+  }
+}

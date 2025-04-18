@@ -1,0 +1,8 @@
+{
+  "parent": "oddsnends:block/template_flax_crop",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "crop_top": "oddsnends:block/flax_crop_top_stage_3",
+    "crop_bottom": "oddsnends:block/flax_crop_bottom_stage_3"
+  }
+}

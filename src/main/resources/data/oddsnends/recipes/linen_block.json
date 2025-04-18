@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "L": {
+      "item": "oddsnends:linen_patch"
+    }
+  },
+  "pattern": [
+    "LL",
+    "LL"
+  ],
+  "result": {
+    "item": "oddsnends:linen_block"
+  },
+  "show_notification": true
+}
