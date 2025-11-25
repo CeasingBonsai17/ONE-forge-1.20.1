@@ -1,2 +1,6 @@
-{"pack":{"pack_format":15,"description":"Vanilla Override Pack For Odds N' Ends 
-Built in"}}
+{
+  "pack":{
+    "pack_format":15,
+    "description":"Vanilla Override Pack For Odds N' Ends\nBuilt in"
+  }
+}

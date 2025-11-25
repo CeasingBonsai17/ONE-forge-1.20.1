@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "oddsnends:block/wild_melon_top",
-    "side": "oddsnends:block/wild_melon_side"
-  }
-}

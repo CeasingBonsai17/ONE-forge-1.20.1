@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_algae": {
+    "has_algae_crate": {
       "conditions": {
         "items": [
           {

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_peeled_mandrake": {
+    "has_peeled_mandrake_crate": {
       "conditions": {
         "items": [
           {

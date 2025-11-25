@@ -1,4 +1,4 @@
-package net.bon.oddsnends.item.custom;
+package net.bon.oddsnends.item.type;
 
 import net.minecraft.world.item.Item;
 

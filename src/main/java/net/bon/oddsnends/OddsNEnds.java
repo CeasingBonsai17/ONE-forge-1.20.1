@@ -4,11 +4,13 @@ import com.mojang.logging.LogUtils;
 import net.bon.oddsnends.block.OddBlocks;
 import net.bon.oddsnends.item.OddCreativeTab;
 import net.bon.oddsnends.item.OddItems;
+import net.bon.oddsnends.loot.OddLootModifiers;
 import net.bon.oddsnends.pack.OddBuiltInPacks;
 import net.bon.oddsnends.particle.OddParticleTypes;
 import net.bon.oddsnends.sound.OddSoundEvents;
 import net.bon.oddsnends.util.CompatUtil;
 import net.bon.oddsnends.worldgen.feature.OddFeatures;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.RegistryAccess;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.packs.PackType;
@@ -42,16 +44,14 @@ public class OddsNEnds
         OddBlocks.init(modEventBus);
         OddItems.init(modEventBus);
         OddCreativeTab.init(modEventBus);
+        OddLootModifiers.init(modEventBus);
         OddParticleTypes.init(modEventBus);
         OddSoundEvents.init(modEventBus);
         OddFeatures.init(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
-
         MinecraftForge.EVENT_BUS.register(this);
-
         modEventBus.addListener(this::addCreative);
-
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 

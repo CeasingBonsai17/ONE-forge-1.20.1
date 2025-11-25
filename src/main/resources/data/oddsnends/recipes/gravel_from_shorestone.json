@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "group": "shorestone",
   "ingredients": [
     {
       "item": "oddsnends:shorestone"

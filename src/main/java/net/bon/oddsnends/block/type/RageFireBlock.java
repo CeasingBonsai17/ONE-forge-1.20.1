@@ -1,7 +1,7 @@
 package net.bon.oddsnends.block.type;
 
 import net.bon.oddsnends.particle.OddParticleTypes;
-import net.bon.oddsnends.util.OddBlockTags;
+import net.bon.oddsnends.util.OddTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -57,7 +57,7 @@ public class RageFireBlock extends BaseFireBlock {
     }
 
     public static boolean canSurviveOnBlock(BlockState state) {
-        return state.is(OddBlockTags.RAGE_FIRE_BASE_BLOCKS);
+        return state.is(OddTags.RAGE_FIRE_BASE_BLOCKS);
     }
 
     protected boolean canBurn(BlockState p_56668_) {

@@ -24,7 +24,7 @@ public class MandrakeCropBlock extends CropBlock {
     public static final IntegerProperty AGE;
     private static final VoxelShape[] SHAPE_BY_AGE;
 
-    public MandrakeCropBlock(BlockBehaviour.Properties properties) {
+    public MandrakeCropBlock(Properties properties) {
         super(properties);
     }
 
@@ -44,7 +44,6 @@ public class MandrakeCropBlock extends CropBlock {
         if (source.nextInt(3) != 0) {
             super.randomTick(state, level, pos, source);
         }
-
     }
 
     protected int getBonemealAgeIncrease(Level level) {

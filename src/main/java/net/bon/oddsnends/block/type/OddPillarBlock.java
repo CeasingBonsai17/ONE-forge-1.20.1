@@ -15,14 +15,14 @@ import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.Property;
 import org.jetbrains.annotations.Nullable;
 
-public class FullPillarBlock extends Block {
+public class OddPillarBlock extends Block {
     public static final DirectionProperty FACING;
 
-    public FullPillarBlock(Properties properties) {
+    public OddPillarBlock(Properties properties) {
         super(properties);
     }
 
-    public FullPillarBlock(int height, int xzOffset, BlockBehaviour.Properties properties) {
+    public OddPillarBlock(int height, int xzOffset, BlockBehaviour.Properties properties) {
         super(properties);
         this.registerDefaultState((BlockState) this.defaultBlockState().setValue(FACING, Direction.UP));
         }

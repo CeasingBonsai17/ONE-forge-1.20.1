@@ -22,7 +22,8 @@ public abstract class BaseFireBlockMixin {
     )
     private static void oddsnends$getState(BlockGetter world, BlockPos pos, CallbackInfoReturnable<BlockState> cir) {
         if (RageFireBlock.canSurviveOnBlock(world.getBlockState(pos.below()))) {
-            cir.setReturnValue(OddBlocks.RAGE_FIRE.get().defaultBlockState());
+            //cir.setReturnValue(OddBlocks.RAGE_FIRE.get().defaultBlockState());
+            cir.cancel();
         }
     }
 }

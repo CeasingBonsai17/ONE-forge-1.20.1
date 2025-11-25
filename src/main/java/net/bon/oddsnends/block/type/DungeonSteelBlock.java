@@ -1,7 +1,6 @@
 package net.bon.oddsnends.block.type;
 
 import net.bon.oddsnends.state.property.OddProperties;
-import net.bon.oddsnends.util.OddBlockTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -13,12 +12,9 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.phys.shapes.VoxelShape;
 
 import javax.annotation.Nullable;
-import java.util.Random;
 
 public class DungeonSteelBlock extends Block {
     public static final BooleanProperty SUBMERGED;

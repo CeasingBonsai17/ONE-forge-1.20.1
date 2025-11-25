@@ -10,5 +10,6 @@
       "loot_table_id": "minecraft:chests/simple_dungeon"
     }
   ],
+  "weight": 100,
   "item": "oddsnends:mandrake_seeds"
 }

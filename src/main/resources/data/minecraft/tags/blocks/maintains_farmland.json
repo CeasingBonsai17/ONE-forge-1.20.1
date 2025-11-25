@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "oddsnends:flax_crop"
+    "oddsnends:flax_crop",
+    "oddsnends:mandrake_crop",
+    "oddsnends:laco_crop"
   ]
 }

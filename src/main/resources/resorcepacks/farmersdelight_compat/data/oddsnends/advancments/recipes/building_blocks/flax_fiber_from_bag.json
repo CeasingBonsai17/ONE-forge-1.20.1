@@ -1,9 +1,9 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_algae": {
       "conditions": {
-        "items": [
+        "has_flax_fiber_bag": {
+          "items": [
           {
             "items": [
               "oddsnends:flax_fiber_bag"

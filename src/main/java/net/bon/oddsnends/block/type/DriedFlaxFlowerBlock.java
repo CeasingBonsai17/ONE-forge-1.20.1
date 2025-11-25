@@ -16,7 +16,7 @@ public class DriedFlaxFlowerBlock extends FlaxFlowerBlock{
     }
 
     public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
-        BlockState $$3 = level.getBlockState(pos.below());
-        return Block.isFaceFull($$3.getCollisionShape(level, pos.below()), Direction.UP);
+        BlockState below = level.getBlockState(pos.below());
+        return Block.isFaceFull(below.getCollisionShape(level, pos.below()), Direction.UP);
     }
 }
