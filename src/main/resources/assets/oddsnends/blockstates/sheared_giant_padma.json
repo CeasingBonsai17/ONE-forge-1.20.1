@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "oddsnends:block/sheared_giant_padma",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "oddsnends:block/sheared_giant_padma",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "oddsnends:block/sheared_giant_padma",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "oddsnends:block/sheared_giant_padma",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "oddsnends:block/sheared_giant_padma"
+    },
+    "facing=west": {
+      "model": "oddsnends:block/sheared_giant_padma",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

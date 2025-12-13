@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "oddsnends:block/flax_bale",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "oddsnends:block/flax_bale"
+    },
+    "axis=z": {
+      "model": "oddsnends:block/flax_bale",
+      "x": 90
+    }
+  }
+}

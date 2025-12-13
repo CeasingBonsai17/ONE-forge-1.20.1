@@ -12,9 +12,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class OddSoundEvents {
     public static final DeferredRegister<SoundEvent> SOUND_EVENT = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, OddsNEnds.MOD_ID);
 
-    public static RegistryObject<SoundEvent> QUARTZ_SAND_BREAK = registerSoundEvent("block.quartz_sand_break");
+    public static RegistryObject<SoundEvent> QUARTZ_SAND_BREAK = registerSoundEvent("block.quartz_sand.break");
 
-    public static RegistryObject<SoundEvent> QUARTZ_SAND_STEP = registerSoundEvent("block.quartz_sand_step");
+    public static RegistryObject<SoundEvent> QUARTZ_SAND_STEP = registerSoundEvent("block.quartz_sand.step");
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENT.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(OddsNEnds.MOD_ID, name)));

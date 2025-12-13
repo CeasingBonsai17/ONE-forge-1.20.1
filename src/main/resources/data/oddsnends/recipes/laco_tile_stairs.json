@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "O": {
+      "item": "oddsnends:laco_tiles"
+    }
+  },
+  "pattern": [
+    "O  ",
+    "OO ",
+    "OOO"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oddsnends:laco_tile_stairs"
+  },
+  "show_notification": true
+}

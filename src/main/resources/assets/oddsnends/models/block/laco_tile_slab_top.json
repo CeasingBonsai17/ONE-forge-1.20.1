@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "oddsnends:block/laco_tiles",
+    "side": "oddsnends:block/laco_tiles",
+    "top": "oddsnends:block/laco_tiles"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "oddsnends:ciderine"
+    }
+  },
+  "result": {
+    "item": "oddsnends:ciderine_block"
+  },
+  "show_notification": true
+}

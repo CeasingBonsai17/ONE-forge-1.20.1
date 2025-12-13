@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "oddsnends:block/ciderine_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "oddsnends:block/ciderine_wood"
+    },
+    "axis=z": {
+      "model": "oddsnends:block/ciderine_wood",
+      "x": 90
+    }
+  }
+}

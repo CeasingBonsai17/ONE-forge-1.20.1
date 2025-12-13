@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oddsnends:block/laco_tile_slab"
+    },
+    "type=double": {
+      "model": "oddsnends:block/laco_tiles"
+    },
+    "type=top": {
+      "model": "oddsnends:block/laco_tile_slab_top"
+    }
+  }
+}

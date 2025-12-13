@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_fence_gate",
+  "pattern": [
+    "A#A",
+    "A#A"
+  ],
+  "key": {
+    "#": {
+      "item": "oddsnends:ciderine_planks"
+    },
+    "A": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "oddsnends:ciderine_fence_gate"
+  },
+  "show_notification": true
+}

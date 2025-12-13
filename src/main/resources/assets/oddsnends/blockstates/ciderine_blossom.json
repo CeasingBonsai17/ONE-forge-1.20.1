@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "oddsnends:block/ciderine_blossom_stage0"
+    },
+    "age=1": {
+      "model": "oddsnends:block/ciderine_blossom_stage1"
+    }
+  }
+}

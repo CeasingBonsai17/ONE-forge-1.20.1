@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oddsnends:dried_flax_flowers"
+    }
+  ],
+  "result": {
+    "item": "oddsnends:flax_fibers"
+  }
+}

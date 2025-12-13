@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "oddsnends:block/ciderine_planks"
+  }
+}

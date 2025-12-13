@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "oddsnends:block/ciderine_stage0"
+    },
+    "age=1": {
+      "model": "oddsnends:block/ciderine_stage1"
+    },
+    "age=2": {
+      "model": "oddsnends:block/ciderine_stage2"
+    },
+    "age=3": {
+      "model": "oddsnends:block/ciderine_stage3"
+    }
+  }
+}

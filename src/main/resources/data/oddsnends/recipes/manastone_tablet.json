@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "stone_tablet",
+  "key": {
+    "#": {
+      "item": "oddsnends:manastone"
+    }
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 3,
+    "item": "oddsnends:manastone_tablet"
+  },
+  "show_notification": true
+}

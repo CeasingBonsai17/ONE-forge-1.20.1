@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 160,
+  "experience": 0.8,
+  "ingredients": [
+    {
+      "item": "oddsnends:ciderine"
+    },
+    {
+      "item": "oddsnends:ciderine"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "item": "oddsnends:ciderine_cider"
+  }
+}

@@ -4,6 +4,27 @@
     "oddsnends:cave_branches",
     "oddsnends:flax_crop",
     "oddsnends:giant_padma",
-    "#oddsnends:ciderine_logs"
+    "oddsnends:sheared_giant_padma",
+    "#oddsnends:ciderine_logs",
+    "oddsnends:ciderine_planks",
+    "oddsnends:ciderine_stairs",
+    "oddsnends:ciderine_slab",
+    "oddsnends:ciderine_fence",
+    "oddsnends:ciderine_fence_gate",
+    "oddsnends:ciderine_door",
+    "oddsnends:ciderine_trapdoor",
+    "oddsnends:ciderine_pressure_plate",
+    "oddsnends:ciderine_button",
+    "oddsnends:ciderine_sign",
+    "oddsnends:ciderine_wall_sign",
+    "oddsnends:ciderine_wall_hanging_sign",
+    "oddsnends:ciderine_hanging_sign",
+    "oddsnends:ciderine_block",
+    "oddsnends:ciderine_crop",
+    "oddsnends:ciderine",
+    "oddsnends:ciderine_crate",
+    "oddsnends:algae_crate",
+    "oddsnends:mandrake_crate",
+    "oddsnends:peeled_mandrake_crate"
   ]
 }

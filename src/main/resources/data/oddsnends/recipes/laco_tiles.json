@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "oddsnends:laco_bar"
+    }
+  },
+  "result": {
+    "item": "oddsnends:laco_tiles"
+  },
+  "show_notification": true
+}

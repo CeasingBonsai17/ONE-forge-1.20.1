@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "oddsnends:block/anthesi_ice_cream_block"
+  }
+}

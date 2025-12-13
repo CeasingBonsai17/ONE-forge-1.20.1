@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "facing=east,slices=1": {
+      "model": "oddsnends:block/ciderine_block_3",
+      "y": 90
+    },
+    "facing=east,slices=2": {
+      "model": "oddsnends:block/ciderine_block_2",
+      "y": 90
+    },
+    "facing=east,slices=3": {
+      "model": "oddsnends:block/ciderine_block_1",
+      "y": 90
+    },
+    "facing=east,slices=4": {
+      "model": "oddsnends:block/ciderine_block",
+      "y": 90
+    },
+    "facing=north,slices=1": {
+      "model": "oddsnends:block/ciderine_block_3"
+    },
+    "facing=north,slices=2": {
+      "model": "oddsnends:block/ciderine_block_2"
+    },
+    "facing=north,slices=3": {
+      "model": "oddsnends:block/ciderine_block_1"
+    },
+    "facing=north,slices=4": {
+      "model": "oddsnends:block/ciderine_block"
+    },
+    "facing=south,slices=1": {
+      "model": "oddsnends:block/ciderine_block_3",
+      "y": 180
+    },
+    "facing=south,slices=2": {
+      "model": "oddsnends:block/ciderine_block_2",
+      "y": 180
+    },
+    "facing=south,slices=3": {
+      "model": "oddsnends:block/ciderine_block_1",
+      "y": 180
+    },
+    "facing=south,slices=4": {
+      "model": "oddsnends:block/ciderine_block",
+      "y": 180
+    },
+    "facing=west,slices=1": {
+      "model": "oddsnends:block/ciderine_block_3",
+      "y": 270
+    },
+    "facing=west,slices=2": {
+      "model": "oddsnends:block/ciderine_block_2",
+      "y": 270
+    },
+    "facing=west,slices=3": {
+      "model": "oddsnends:block/ciderine_block_1",
+      "y": 270
+    },
+    "facing=west,slices=4": {
+      "model": "oddsnends:block/ciderine_block",
+      "y": 270
+    }
+  }
+}

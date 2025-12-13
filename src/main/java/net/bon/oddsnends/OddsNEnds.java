@@ -34,8 +34,7 @@ import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(OddsNEnds.MOD_ID)
-public class OddsNEnds
-{
+public class OddsNEnds {
     public static final String MOD_ID = "oddsnends";
     private static final Logger LOGGER = LogUtils.getLogger();
     public OddsNEnds() {
@@ -50,6 +49,8 @@ public class OddsNEnds
         OddFeatures.init(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(OddsNEnds::addBuiltInPacks);
+
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -67,7 +68,7 @@ public class OddsNEnds
 
     @SubscribeEvent
     public void onServerAboutToStart(ServerAboutToStartEvent event) {
-
+        LOGGER.info("Odds N' Ends? guh??");
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -79,8 +80,14 @@ public class OddsNEnds
 
     private static void addBuiltInPacks(AddPackFindersEvent event) {
         if (event.getPackType() == PackType.SERVER_DATA) {
-            if (CompatUtil.checkFarmersDelight()) {
+            if (CompatUtil.checkBountifulFares()) {
+                OddBuiltInPacks.dpBountifulFaresCompat(event);
+            }
+            //if (CompatUtil.checkFarmersDelight()) {
                 OddBuiltInPacks.dpFarmersDelightCompat(event);
+            //}
+            if (CompatUtil.checkNeapolitan()) {
+                OddBuiltInPacks.dpNeapolitanCompat(event);
             }
         }
     }

@@ -19,7 +19,11 @@ public class OddItems {
 
 
     public static final RegistryObject<Item> CIDERINE = ITEM.register("ciderine", () ->
-            new ItemNameBlockItem(OddBlocks.CIDERINE.get(), new Item.Properties().food(OddFoods.CIDERINE)));
+            new BlockItem(OddBlocks.CIDERINE.get(), new Item.Properties().food(OddFoods.CIDERINE)));
+    public static final RegistryObject<Item> CARAMELIZED_CIDERINE = ITEM.register("caramelized_ciderine", () ->
+            new Item(new Item.Properties().food(OddFoods.CIDERINE)));
+    public static final RegistryObject<Item> CIDERINE_CIDER = ITEM.register("ciderine_cider", () ->
+            new Item(new Item.Properties().food(OddFoods.CIDERINE_CIDER)));
     public static final RegistryObject<Item> CIDERINE_SIGN = ITEM.register("ciderine_sign", () ->
             new SignItem(new Item.Properties().stacksTo(16), OddBlocks.CIDERINE_SIGN.get(), OddBlocks.CIDERINE_WALL_SIGN.get()));
     public static final RegistryObject<Item> CIDERINE_HANGING_SIGN = ITEM.register("ciderine_hanging_sign", () ->
@@ -37,6 +41,10 @@ public class OddItems {
 
     public static final RegistryObject<Item> LACO_BEANS = ITEM.register("laco_beans", () ->
             new ItemNameBlockItem(OddBlocks.LACO_CROP.get(), new Item.Properties().food(OddFoods.LACO_BEANS)));
+    public static final RegistryObject<Item> CANDIED_LACO_BEAN = ITEM.register("candied_laco_bean", () ->
+            new Item(new Item.Properties().food(OddFoods.CANDIED_LACO_BEAN)));
+    public static final RegistryObject<Item> LACO_BAR = ITEM.register("laco_bar", () ->
+            new Item(new Item.Properties().food(OddFoods.LACO_BAR)));
 
 
     public static final RegistryObject<Item> ALGAE = ITEM.register("algae", () ->
@@ -52,12 +60,13 @@ public class OddItems {
     public static final RegistryObject<Item> MANDRAKE_SEEDS = ITEM.register("mandrake_seeds", () ->
             new ItemNameBlockItem(OddBlocks.MANDRAKE_CROP.get(), new Item.Properties()));
     public static final RegistryObject<Item> MANDRAKE = ITEM.register("mandrake", () ->
-            new Item(new Item.Properties().food(OddFoods.MANDRAKE)));
+            new BlockItem(OddBlocks.MANDRAKE.get(), new Item.Properties().food(OddFoods.MANDRAKE)));
     public static final RegistryObject<Item> PEELED_MANDRAKE = ITEM.register("peeled_mandrake", () ->
             new Item(new Item.Properties().food(OddFoods.PEELED_MANDRAKE)));
 
     public static final RegistryObject<Item> DUNGEON_STEEL = ITEM.register("dungeon_steel", () ->
             new Item(new Item.Properties()));
+
     //public static final RegistryObject<Item> RAGE_SCONCE = ITEM.register("rage_sconce", () ->
     //        new StandingAndWallBlockItem(OddBlocks.RAGE_SCONCE.get(), OddBlocks.RAGE_WALL_SCONCE.get(), new Item.Properties(), Direction.DOWN));
 

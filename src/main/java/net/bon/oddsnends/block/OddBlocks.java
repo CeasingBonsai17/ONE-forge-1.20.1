@@ -69,48 +69,63 @@ public class OddBlocks {
            new CiderineLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).sound(SoundType.AZALEA_LEAVES)));
    public static final RegistryObject<Block> CIDERINE_SAPLING = registerBlock("ciderine_sapling", () ->
            new SaplingBlock(new CiderineTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+   public static final RegistryObject<Block> POTTED_CIDERINE_SAPLING = registerBlockWithoutItem("potted_ciderine_sapling", () ->
+           new FlowerPotBlock(CIDERINE_SAPLING.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
    public static final RegistryObject<Block> CIDERINE_SIGN = registerBlockWithoutItem("ciderine_sign", () ->
            new StandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN).mapColor(MapColor.RAW_IRON), OddBlockTypes.CIDERINE));
    public static final RegistryObject<Block> CIDERINE_WALL_SIGN = registerBlockWithoutItem("ciderine_wall_sign", () ->
-           new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).mapColor(MapColor.RAW_IRON), OddBlockTypes.CIDERINE));
+           new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN).dropsLike(CIDERINE_SIGN.get()).mapColor(MapColor.RAW_IRON), OddBlockTypes.CIDERINE));
    public static final RegistryObject<Block> CIDERINE_HANGING_SIGN = registerBlockWithoutItem("ciderine_hanging_sign", () ->
            new CeilingHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN).mapColor(MapColor.RAW_IRON), OddBlockTypes.CIDERINE));
    public static final RegistryObject<Block> CIDERINE_WALL_HANGING_SIGN = registerBlockWithoutItem("ciderine_wall_hanging_sign", () ->
-           new WallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).mapColor(MapColor.RAW_IRON), OddBlockTypes.CIDERINE));
+           new WallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).dropsLike(CIDERINE_HANGING_SIGN.get()).mapColor(MapColor.RAW_IRON), OddBlockTypes.CIDERINE));
 
 
    public static final RegistryObject<Block> FLAX_FLOWERS = registerBlock("flax_flowers", () ->
            new FlaxFlowerBlock(MobEffects.SATURATION, 7, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+   public static final RegistryObject<Block> POTTED_FLAX = registerBlockWithoutItem("potted_flax", () ->
+           new FlowerPotBlock(FLAX_FLOWERS.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
    public static final RegistryObject<Block> DRIED_FLAX_FLOWERS = registerBlock("dried_flax_flowers", () ->
            new DriedFlaxFlowerBlock(MobEffects.SATURATION, 7, BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+   public static final RegistryObject<Block> POTTED_DRIED_FLAX = registerBlockWithoutItem("potted_dried_flax", () ->
+           new FlowerPotBlock(DRIED_FLAX_FLOWERS.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
    public static final RegistryObject<Block> FLAX_CROP = registerBlockWithoutItem("flax_crop", () ->
            new FlaxCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().randomTicks().sound(SoundType.CROP).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+   public static final RegistryObject<Block> FLAX_BALE = registerBlock("flax_bale", () ->
+           new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.HAY_BLOCK).mapColor(MapColor.WOOD)));
    public static final RegistryObject<Block> LINEN_BLOCK = registerBlock("linen_block", () ->
            new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL).mapColor(MapColor.TERRACOTTA_WHITE).strength(0.1F).randomTicks().sound(SoundType.WOOL).ignitedByLava()));
    public static final RegistryObject<Block> LINEN_CARPET = registerBlock("linen_carpet", () ->
            new CarpetBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_CARPET).mapColor(MapColor.TERRACOTTA_WHITE).strength(0.1F).randomTicks().sound(SoundType.WOOL).ignitedByLava()));
 
 
-   public static final RegistryObject<Block> POTTED_FLAX = registerBlockWithoutItem("potted_flax", () ->
-           new FlowerPotBlock(FLAX_FLOWERS.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
-   public static final RegistryObject<Block> POTTED_DRIED_FLAX = registerBlockWithoutItem("potted_dried_flax", () ->
-           new FlowerPotBlock(DRIED_FLAX_FLOWERS.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
    public static final RegistryObject<Block> LACO_CROP = registerBlockWithoutItem("laco_crop", () ->
            new LacoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).mapColor(MapColor.TERRACOTTA_WHITE)));
+   public static final RegistryObject<Block> WILD_LACO = registerBlock("wild_laco", () ->
+           new WildLacoBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).mapColor(MapColor.TERRACOTTA_WHITE)));
    public static final RegistryObject<Block> LACO_TILES = registerBlock("laco_tiles", () ->
-           new Block(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE)));
+           new Block(BlockBehaviour.Properties.of().strength(0.5f).mapColor(MapColor.TERRACOTTA_WHITE).sound(SoundType.BAMBOO)));
+   public static final RegistryObject<Block> LACO_TILE_STAIRS = registerBlock("laco_tile_stairs", () ->
+           new StairBlock(LACO_TILES.get().defaultBlockState(), BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(0.5f).sound(SoundType.BAMBOO)));
+   public static final RegistryObject<Block> LACO_TILE_SLAB = registerBlock("laco_tile_slab", () ->
+           new SlabBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_WHITE).strength(0.5f).sound(SoundType.BAMBOO)));
 
 
    public static final RegistryObject<Block> ALGAE = registerBlockWithoutItem("algae", () ->
-            new AmethystClusterBlock(5, 2, BlockBehaviour.Properties.copy(Blocks.LILY_PAD).instabreak().noCollission().noOcclusion().replaceable().pushReaction(PushReaction.DESTROY)));
+           new AmethystClusterBlock(5, 2, BlockBehaviour.Properties.copy(Blocks.LILY_PAD).instabreak().noCollission().noOcclusion().replaceable().pushReaction(PushReaction.DESTROY)));
    public static final RegistryObject<Block> CAVE_BRANCHES = registerBlock("cave_branches", () ->
            new CaveBranchBlock(BlockBehaviour.Properties.copy(Blocks.VINE).noOcclusion()));
    public static final RegistryObject<Block> GIANT_PADMA = registerBlock("giant_padma", () ->
-           new GiantPadmaBlock(8, 1, BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM_BLOCK).noOcclusion()));
-
+           new GiantPadmaBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM_BLOCK).noOcclusion()));
+   public static final RegistryObject<Block> SHEARED_GIANT_PADMA = registerBlock("sheared_giant_padma", () ->
+           new ShearedGiantPadmaBlock(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM_BLOCK).noOcclusion()));
    public static final RegistryObject<Block> MANDRAKE_CROP = registerBlockWithoutItem("mandrake_crop", () ->
            new MandrakeCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().randomTicks().sound(SoundType.CROP).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+   public static final RegistryObject<Block> MANDRAKE = registerBlockWithoutItem("mandrake", () ->
+           new MandrakeBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().randomTicks().sound(SoundType.CROP).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+   public static final RegistryObject<Block> POTTED_MANDRAKE = registerBlockWithoutItem("potted_mandrake", () ->
+           new FlowerPotBlock(MANDRAKE.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
 
    public static final RegistryObject<Block> MANASTONE = registerBlock("manastone", () ->
            new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
@@ -149,14 +164,14 @@ public class OddBlocks {
            new DungeonSteelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
 
-   public static final RegistryObject<Block> RAGE_FIRE = registerBlockWithoutItem("rage_fire", () ->
-           new RageFireBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_FIRE).lightLevel(state -> 14).mapColor(MapColor.COLOR_LIGHT_GREEN)));
-   public static final RegistryObject<Block> RAGE_SCONCE = registerBlockWithoutItem("rage_sconce", () ->
-           new RageSconceBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_TORCH).lightLevel(state -> 13)));
-   public static final RegistryObject<Block> RAGE_WALL_SCONCE = registerBlockWithoutItem("rage_wall_sconce", () ->
-           new WallRageSconceBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_WALL_TORCH).lightLevel(state -> 13)));
-   public static final RegistryObject<Block> RAGE_LANTERN = registerBlock("rage_lantern", () ->
-           new RageLanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN).lightLevel(state -> 14)));
+//   public static final RegistryObject<Block> RAGE_FIRE = registerBlockWithoutItem("rage_fire", () ->
+//           new RageFireBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_FIRE).lightLevel(state -> 14).mapColor(MapColor.COLOR_LIGHT_GREEN)));
+//   public static final RegistryObject<Block> RAGE_SCONCE = registerBlockWithoutItem("rage_sconce", () ->
+//           new RageSconceBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_TORCH).lightLevel(state -> 13)));
+//   public static final RegistryObject<Block> RAGE_WALL_SCONCE = registerBlockWithoutItem("rage_wall_sconce", () ->
+//           new WallRageSconceBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_WALL_TORCH).lightLevel(state -> 13)));
+//   public static final RegistryObject<Block> RAGE_LANTERN = registerBlock("rage_lantern", () ->
+//           new RageLanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN).lightLevel(state -> 14)));
 
    public static final RegistryObject<Block> HANGING_SPAWNER = registerBlock("hanging_spawner", () ->
            new SpawnerBlock(BlockBehaviour.Properties.copy(Blocks.SPAWNER).mapColor(MapColor.STONE)));
@@ -214,9 +229,7 @@ public class OddBlocks {
            new CiderineBlock(6, 0.6f, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).instrument(NoteBlockInstrument.DIDGERIDOO).sound(SoundType.WOOD).mapColor(MapColor.CRIMSON_STEM).pushReaction(PushReaction.DESTROY).strength(1f)));
    public static final RegistryObject<Block> CIDERINE_ICE_CREAM_BLOCK = registerBlock("ciderine_ice_cream_block", () ->
            new Block(BlockBehaviour.Properties.of().mapColor(MapColor.RAW_IRON).instrument(NoteBlockInstrument.CHIME).strength(0.2F).sound(SoundType.SNOW)));
-   public static final RegistryObject<Block> FLAX_FIBER_BAG = registerCompatBlock("flax_fiber_bag", () ->
-           new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)), CompatUtil.FARMERSDELIGHT);
-   public static final RegistryObject<Block> ANTHESI_ICE_CREAM_BLOCK = registerCompatBlock("anthesi_ice_cream_block", () ->
+    public static final RegistryObject<Block> ANTHESI_ICE_CREAM_BLOCK = registerCompatBlock("anthesi_ice_cream_block", () ->
            new Block(BlockBehaviour.Properties.copy(CIDERINE_ICE_CREAM_BLOCK.get()).mapColor(MapColor.TERRACOTTA_WHITE)), CompatUtil.NEAPOLITAN);
    public static final RegistryObject<Block> LACO_BEAN_BAG = registerCompatBlock("laco_bean_bag", () ->
            new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)), CompatUtil.FARMERSDELIGHT);
@@ -237,7 +250,7 @@ public class OddBlocks {
 
    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
        RegistryObject<T> toReturn = BLOCK.register(name, block);
-      registerBlockItem(name, toReturn);
+       registerBlockItem(name, toReturn);
        return toReturn;
    }
 
@@ -251,9 +264,10 @@ public class OddBlocks {
 
    public static <T extends Block> RegistryObject<T> registerCompatBlock(String name, Supplier<T> block, String modId) {
        RegistryObject<T> toReturn = BLOCK.register(name, block);
-       if (FMLLoader.getLoadingModList().getModFileById(modId) != null) {
-           OddItems.ITEM.register(name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
-       }
+       registerBlockItem(name, toReturn);
+//       if (FMLLoader.getLoadingModList().getModFileById(modId) != null) {
+//           OddItems.ITEM.register(name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
+//       }
        return toReturn;
    }
 

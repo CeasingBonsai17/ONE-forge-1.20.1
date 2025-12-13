@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_sign",
+  "key": {
+    "#": {
+      "item": "oddsnends:ciderine_planks"
+    },
+    "A": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "###",
+    "###",
+    " A "
+  ],
+  "result": {
+    "count": 3,
+    "item": "oddsnends:ciderine_sign"
+  },
+  "show_notification": true
+}

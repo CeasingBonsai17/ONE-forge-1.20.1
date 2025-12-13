@@ -1,54 +1,28 @@
 {
   "variants": {
-    "facing=down,sheared=false": {
+    "facing=down": {
       "model": "oddsnends:block/giant_padma",
       "x": 180
     },
-    "facing=east,sheared=false": {
+    "facing=east": {
       "model": "oddsnends:block/giant_padma",
       "x": 90,
       "y": 90
     },
-    "facing=north,sheared=false": {
+    "facing=north": {
       "model": "oddsnends:block/giant_padma",
       "x": 90
     },
-    "facing=south,sheared=false": {
+    "facing=south": {
       "model": "oddsnends:block/giant_padma",
       "x": 90,
       "y": 180
     },
-    "facing=up,sheared=false": {
+    "facing=up": {
       "model": "oddsnends:block/giant_padma"
     },
-    "facing=west,sheared=false": {
+    "facing=west": {
       "model": "oddsnends:block/giant_padma",
-      "x": 90,
-      "y": 270
-    },
-    "facing=down,sheared=true": {
-      "model": "oddsnends:block/sheared_giant_padma",
-      "x": 180
-    },
-    "facing=east,sheared=true": {
-      "model": "oddsnends:block/sheared_giant_padma",
-      "x": 90,
-      "y": 90
-    },
-    "facing=north,sheared=true": {
-      "model": "oddsnends:block/sheared_giant_padma",
-      "x": 90
-    },
-    "facing=south,sheared=true": {
-      "model": "oddsnends:block/sheared_giant_padma",
-      "x": 90,
-      "y": 180
-    },
-    "facing=up,sheared=true": {
-      "model": "oddsnends:block/sheared_giant_padma"
-    },
-    "facing=west,sheared=true": {
-      "model": "oddsnends:block/sheared_giant_padma",
       "x": 90,
       "y": 270
     }

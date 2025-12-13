@@ -1,0 +1,25 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "oddsnends:block/ciderine_stage3"
+    },
+    "facing=east": {
+      "model": "oddsnends:block/ciderine_wall",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "oddsnends:block/ciderine_wall"
+    },
+    "facing=south": {
+      "model": "oddsnends:block/ciderine_wall",
+      "y": 180
+    },
+    "facing=up": {
+      "model": "oddsnends:block/ciderine_floor"
+    },
+    "facing=west": {
+      "model": "oddsnends:block/ciderine_wall",
+      "y": 270
+    }
+  }
+}

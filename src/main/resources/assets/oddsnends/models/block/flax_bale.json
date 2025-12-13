@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "oddsnends:block/flax_bale_top",
+    "side": "oddsnends:block/flax_bale"
+  }
+}

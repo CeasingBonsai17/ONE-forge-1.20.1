@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "oddsnends:block/wild_laco_bottom"
+    },
+    "half=upper": {
+      "model": "oddsnends:block/wild_laco_top"
+    }
+  }
+}

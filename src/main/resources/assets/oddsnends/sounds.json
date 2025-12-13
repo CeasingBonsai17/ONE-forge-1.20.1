@@ -1,21 +1,14 @@
 {
   "block.quartz_sand.step": {
     "sounds": [
-      "oddsnends:block/quartz_sand/step4",
-      "oddsnends:block/quartz_sand/step5",
       "step/sand1",
       "step/sand2",
       "step/sand3",
-      "step/sand4",
-      "step/sand5",
       "oddsnends:block/quartz_sand/step1",
       "oddsnends:block/quartz_sand/step2",
       "oddsnends:block/quartz_sand/step3",
-      "block/suspicious_sand/step1",
-      "block/suspicious_sand/step2",
-      "block/suspicious_sand/step3",
-      "block/suspicious_sand/step4",
-      "block/suspicious_sand/step5"
+      "oddsnends:block/quartz_sand/step4",
+      "oddsnends:block/quartz_sand/step5"
     ],
     "subtitle": "subtitles.block.generic.footsteps"
   },
@@ -24,6 +17,6 @@
       "block/suspicious_sand/break2",
       "block/suspicious_sand/break6"
     ],
-    "subtitle": "subtitles.block.generic.footsteps"
+    "subtitle": "subtitles.block.generic.break"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "oddsnends:block/linen_bag_bottom",
+    "east": "oddsnends:block/linen_bag_side",
+    "north": "oddsnends:block/linen_bag_side_tied",
+    "particle": "#up",
+    "south": "oddsnends:block/linen_bag_side_tied",
+    "up": "oddsnends:block/laco_bean_bag_top",
+    "west": "oddsnends:block/linen_bag_side"
+  }
+}

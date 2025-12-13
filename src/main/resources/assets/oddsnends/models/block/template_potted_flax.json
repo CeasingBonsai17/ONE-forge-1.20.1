@@ -1,7 +1,8 @@
 {
+	"format_version": "1.21.6",
 	"credit": "Made with Blockbench",
-	"render_type": "minecraft:cutout",
 	"ambientocclusion": false,
+	"render_type": "minecraft:cutout",
 	"textures": {
 		"particle": "block/flower_pot",
 		"flowerpot": "block/flower_pot",
@@ -62,22 +63,30 @@
 		},
 		{
 			"from": [2.6, 4, 8],
-			"to": [13.4, 20.25, 8],
-			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+			"to": [13.4, 22, 8],
 			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
 			"faces": {
-				"north": {"uv": [0, 0, 16, 16], "texture": "#plant"},
-				"south": {"uv": [0, 0, 16, 16], "texture": "#plant"}
+				"north": {"uv": [0, 6.5, 16, 16], "texture": "#plant"},
+				"east": {"uv": [0, 0, 0, 0], "texture": "#plant"},
+				"south": {"uv": [0, 6.5, 16, 16], "texture": "#plant"},
+				"west": {"uv": [0, 0, 0, 0], "texture": "#plant"},
+				"up": {"uv": [0, 0, 0, 0], "texture": "#plant"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#plant"}
 			}
 		},
 		{
 			"from": [8, 4, 2.6],
-			"to": [8, 20.25, 13.4],
-			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
+			"to": [8, 22, 13.4],
 			"shade": false,
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8], "rescale": true},
 			"faces": {
-				"east": {"uv": [0, 0, 16, 16], "texture": "#plant"},
-				"west": {"uv": [0, 0, 16, 16], "texture": "#plant"}
+				"north": {"uv": [0, 0, 0, 0], "texture": "#plant"},
+				"east": {"uv": [0, 6.5, 16, 16], "texture": "#plant"},
+				"south": {"uv": [0, 0, 0, 0], "texture": "#plant"},
+				"west": {"uv": [0, 6.5, 16, 16], "texture": "#plant"},
+				"up": {"uv": [0, 0, 0, 0], "texture": "#plant"},
+				"down": {"uv": [0, 0, 0, 0], "texture": "#plant"}
 			}
 		}
 	]

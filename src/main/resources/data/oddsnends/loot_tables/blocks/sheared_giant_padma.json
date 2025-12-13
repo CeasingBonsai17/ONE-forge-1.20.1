@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "oddsnends:sheared_giant_padma"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "oddsnends:blocks/sheared_giant_padma"
+}

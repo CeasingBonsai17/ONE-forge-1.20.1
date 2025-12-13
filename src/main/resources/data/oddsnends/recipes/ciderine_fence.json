@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_fence",
+  "pattern": [
+    "#A#",
+    "#A#"
+  ],
+  "key": {
+    "#": {
+      "item": "oddsnends:ciderine_planks"
+    },
+    "A": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "count": 3,
+    "item": "oddsnends:ciderine_fence"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "oddsnends:item/ciderine",
+    "particle": "oddsnends:item/peeled_ciderine"
+  }
+}

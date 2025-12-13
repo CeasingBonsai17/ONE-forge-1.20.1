@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#oddsnends:spawns_ciderine_trees",
+  "features": "oddsnends:ciderine_tree",
+  "step": "vegetal_decoration"
+}

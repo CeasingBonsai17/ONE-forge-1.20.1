@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
-    "oddsnends:rage_sconce"
+    "oddsnends:rage_sconce",
+    "oddsnends:ciderine_pressure_plate",
+    "oddsnends:ciderine_sign",
+    "oddsnends:ciderine_wall_sign"
   ]
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "oddsnends:block/ciderine_log_top",
+    "side": "oddsnends:block/ciderine_log"
+  }
+}

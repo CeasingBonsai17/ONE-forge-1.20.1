@@ -2,6 +2,10 @@
   "replace": false,
   "values": [
     "oddsnends:quartz_sand",
-    "oddsnends:suspicious_quartz_sand"
+    "oddsnends:suspicious_quartz_sand",
+    "oddsnends:ciderine_ice_cream_block",
+    "oddsnends:anthesi_ice_cream_block",
+    "oddsnends:laco_sorbet_block",
+    "oddsnends:mandrake_ice_cream_block"
   ]
 }
