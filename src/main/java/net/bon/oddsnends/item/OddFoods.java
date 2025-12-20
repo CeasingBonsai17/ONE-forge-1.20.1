@@ -9,11 +9,15 @@ public class OddFoods {
     public static final FoodProperties CANDIED_LACO_BEAN = new FoodProperties.Builder().nutrition(2).saturationMod(0.3f).fast().build();
     public static final FoodProperties LACO_BAR = new FoodProperties.Builder().nutrition(6).saturationMod(0.5f).build();
     public static final FoodProperties ALGAE = new FoodProperties.Builder().nutrition(2).saturationMod(0.1f).fast().build();
-    public static final FoodProperties MANDRAKE = new FoodProperties.Builder().nutrition(3).saturationMod(0.8f).effect(new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 0.5f).build();
+    public static final FoodProperties MANDRAKE = new FoodProperties.Builder().nutrition(3).saturationMod(0.8f).effect(new MobEffectInstance(MobEffects.CONFUSION, 300, 0), 0.65f).build();
     public static final FoodProperties PEELED_MANDRAKE = new FoodProperties.Builder().nutrition(3).saturationMod(0.8f).build();
-    public static final FoodProperties CIDERINE = new FoodProperties.Builder().nutrition(6).saturationMod(0.3f).build();
+    public static final FoodProperties CIDERINE = new FoodProperties.Builder().nutrition(6).saturationMod(0.4f).build();
+    public static final FoodProperties CARAMELIZED_CIDERINE = new FoodProperties.Builder().fast().nutrition(4).saturationMod(0.7f).build();
+    public static final FoodProperties CANDIED_CIDERINE = new FoodProperties.Builder().fast().nutrition(2).saturationMod(0.2f).build();
     public static final FoodProperties CIDERINE_CIDER = new FoodProperties.Builder().saturationMod(0.2f).effect(() -> new MobEffectInstance(MobEffects.ABSORPTION, 1000, 0), 1.0f).alwaysEat().build();
     public static final FoodProperties ICE_CREAM = new FoodProperties.Builder().nutrition(6).saturationMod(0.4f).build();
+    public static final FoodProperties CIDERINE_ICE_CREAM = new FoodProperties.Builder().nutrition(6).saturationMod(0.4f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 500, 0), 1.0f).build();
+    public static final FoodProperties MINTY_CIDERINE_ICE_CREAM = new FoodProperties.Builder().nutrition(6).saturationMod(0.4f).effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 300, 0), 1.0f).build();
 
 
     //public static final FoodProperties MINTY_ICE_CREAM = new FoodProperties.Builder().nutrition(6).saturationMod(0.4f).effect(new MobEffectInstance(NeapolitanMobEffects.BERSERKING, 700, 0), 1.0f).build();

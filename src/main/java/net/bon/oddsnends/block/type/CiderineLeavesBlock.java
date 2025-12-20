@@ -1,5 +1,6 @@
 package net.bon.oddsnends.block.type;
 
+import net.bon.oddsnends.OddConfig;
 import net.bon.oddsnends.block.OddBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -27,6 +28,7 @@ public class CiderineLeavesBlock extends LeavesBlock implements BonemealableBloc
 
     @Override
     public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
-        level.setBlock(pos.below(), OddBlocks.CIDERINE_BLOSSOM.get().defaultBlockState(), 11);
+        level.setBlockAndUpdate(pos.below(), OddBlocks.CIDERINE_BLOSSOM.get().defaultBlockState().setValue(CiderineBlossomBlock.POLLINATED, !OddConfig.ciderineRequirePollinationToGrow));
+
     }
 }

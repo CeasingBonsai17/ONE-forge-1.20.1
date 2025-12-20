@@ -3,9 +3,12 @@ package net.bon.oddsnends.block.type;
 import net.bon.oddsnends.state.property.OddProperties;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoublePlantBlock;
@@ -26,6 +29,10 @@ public class WildLacoBlock extends DoublePlantBlock implements SimpleWaterlogged
     public WildLacoBlock(Properties properties) {
         super(properties);
         registerDefaultState(this.defaultBlockState().setValue(WATERLOGGED, false));
+    }
+
+    protected boolean mayPlaceOn(BlockState state, BlockGetter block, BlockPos pos) {
+        return state.is(BlockTags.DIRT) || state.is(Blocks.FARMLAND) || state.is(Blocks.SAND);
     }
 
     @Nullable

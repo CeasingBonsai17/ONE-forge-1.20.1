@@ -6,7 +6,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "oddsnends:dried_flax_flowers"
+            "items": [
+              "oddsnends:dried_flax_flowers"
+            ]
           }
         ]
       }

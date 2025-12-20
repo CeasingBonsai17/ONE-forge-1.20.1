@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "flax_fibers",
   "ingredients": [
     {
       "item": "oddsnends:flax_bale"

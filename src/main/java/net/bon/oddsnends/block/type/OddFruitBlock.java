@@ -65,7 +65,7 @@ public class OddFruitBlock extends Block {
 
     @Override
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
-        if (player.getItemInHand(hand).isEmpty() && player.canEat(false)) {
+        if (!player.isSecondaryUseActive() && player.canEat(false)) {
             switch (state.getValue(SLICES)) {
                 case 2, 3, 4 -> level.setBlockAndUpdate(pos,state.setValue(SLICES, state.getValue(SLICES) - 1));
                 case 1 -> level.setBlockAndUpdate(pos, Blocks.AIR.defaultBlockState());

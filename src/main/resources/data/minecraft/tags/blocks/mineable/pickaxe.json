@@ -16,9 +16,6 @@
     "oddsnends:smooth_manastone",
     "oddsnends:smooth_manastone_slab",
     "oddsnends:manastone_tablet",
-    "oddsnends:dungeon_steel_ore",
-    "oddsnends:dungeon_steel_block",
-    "oddsnends:rage_lantern",
     "oddsnends:shale",
     "oddsnends:shale_bricks",
     "oddsnends:shale_brick_stairs",
@@ -35,6 +32,9 @@
     "oddsnends:shorestone_bricks",
     "oddsnends:shorestone_brick_stairs",
     "oddsnends:shorestone_brick_slab",
-    "oddsnends:laco_tiles"
+    "oddsnends:laco_tiles",
+    "oddsnends:rusty_basalt",
+    "oddsnends:smooth_rusty_basalt",
+    "oddsnends:polished_rusty_basalt"
   ]
 }

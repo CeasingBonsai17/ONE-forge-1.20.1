@@ -1,5 +1,6 @@
 package net.bon.oddsnends.block.type;
 
+import net.bon.oddsnends.OddConfig;
 import net.bon.oddsnends.block.OddBlocks;
 import net.bon.oddsnends.state.property.OddProperties;
 import net.bon.oddsnends.util.OddTags;
@@ -22,6 +23,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -42,6 +44,19 @@ public class CiderineBlossomBlock extends Block implements BonemealableBlock {
         return !state.canSurvive(level, pos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, direction, state, level, pos, blockPos);
     }
 
+
+
+    @Override
+    public float getMaxHorizontalOffset() {
+        float offset;
+        if (OddConfig.ciderineCropXZRandomization) {
+            offset = super.getMaxHorizontalOffset();
+        } else {
+            offset = 0.0f;
+        }
+        return offset;
+    }
+
     public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
         return level.getBlockState(pos.above()).is(OddTags.CIDERINE_LEAVES);
     }
@@ -56,7 +71,7 @@ public class CiderineBlossomBlock extends Block implements BonemealableBlock {
     public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if(state.getValue(AGE) == 0) {
             level.setBlock(pos, state.setValue(AGE, 1), 11);;
-        } if(state.getValue(AGE) == 1 && random.nextInt(8) == 3) {
+        } if(state.getValue(AGE) == 1 && random.nextInt(8) == 3 && state.getValue(POLLINATED)) {
             level.setBlockAndUpdate(pos, OddBlocks.CIDERINE_CROP.get().defaultBlockState());
         }
     }
@@ -79,13 +94,14 @@ public class CiderineBlossomBlock extends Block implements BonemealableBlock {
     @Override
     public void performBonemeal(ServerLevel level, RandomSource random, BlockPos pos, BlockState state) {
         if(state.getValue(AGE) == 0) {
-            level.setBlock(pos, state.setValue(AGE, 1), 11);;
-        } if(state.getValue(POLLINATED)) {
-            level.setBlockAndUpdate(pos, OddBlocks.CIDERINE_CROP.get().defaultBlockState());
+            level.setBlock(pos, state.setValue(AGE, 1), 11);
+        }if(state.getValue(POLLINATED) && state.getValue(AGE) == 1) {
+                level.setBlockAndUpdate(pos, OddBlocks.CIDERINE_CROP.get().defaultBlockState());
         }
     }
 
     public VoxelShape getShape(BlockState state, BlockGetter view, BlockPos pos, CollisionContext context) {
-        return SHAPE_BY_AGE[state.getValue(AGE)];
+        Vec3 vec3 = state.getOffset(view, pos);
+        return SHAPE_BY_AGE[state.getValue(AGE)].move(vec3.x, vec3.y, vec3.z);
     }
 }

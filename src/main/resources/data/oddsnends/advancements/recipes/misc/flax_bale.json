@@ -6,7 +6,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "oddsnends:flax_fibers"
+            "items": [
+              "oddsnends:flax_fibers"
+            ]
           }
         ]
       }

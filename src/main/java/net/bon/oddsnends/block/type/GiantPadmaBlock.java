@@ -56,7 +56,7 @@ public class GiantPadmaBlock extends AmethystClusterBlock {
             }
 
             if (bl) {
-                        return InteractionResult.sidedSuccess(level.isClientSide);
+                return InteractionResult.sidedSuccess(level.isClientSide);
                 }
             return InteractionResult.PASS;
     }

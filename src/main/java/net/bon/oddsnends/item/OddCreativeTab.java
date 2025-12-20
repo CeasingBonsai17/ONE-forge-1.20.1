@@ -42,11 +42,13 @@ public class OddCreativeTab {
                         output.accept(OddBlocks.CIDERINE_LEAVES.get());
                         output.accept(OddBlocks.FLOWERING_CIDERINE_LEAVES.get());
                         output.accept(OddItems.CIDERINE.get());
+                        output.accept(OddItems.CARAMELIZED_CIDERINE.get());
                         if (CompatUtil.checkFarmersDelight()) {
                             output.accept(OddBlocks.CIDERINE_CRATE.get());
                             output.accept(OddItems.CIDERINE_CIDER.get());
                         } if (CompatUtil.checkBountifulFares()) {
                             output.accept(OddBlocks.CIDERINE_BLOCK.get());
+                            output.accept(OddItems.CANDIED_CIDERINE.get());
                         } if (CompatUtil.checkNeapolitan()) {
                             output.accept(OddBlocks.CIDERINE_ICE_CREAM_BLOCK.get());
                             output.accept(OddItems.CIDERINE_ICE_CREAM.get());
@@ -65,21 +67,24 @@ public class OddCreativeTab {
                         output.accept(OddItems.LINEN_PATCH.get());
                         output.accept(OddBlocks.LINEN_BLOCK.get());
                         output.accept(OddBlocks.LINEN_CARPET.get());
+                        output.accept(OddBlocks.SPINEROOT.get());
+                        output.accept(OddBlocks.FIELD_CLOVERS.get());
+                        output.accept(OddBlocks.RUSTY_CLOVERS.get());
+                        output.accept(OddBlocks.WILD_LACO.get());
                         output.accept(OddItems.LACO_BEANS.get());
                         if (CompatUtil.checkBountifulFares()) {
                             output.accept(OddItems.CANDIED_LACO_BEAN.get());
                         }
                         output.accept(OddItems.LACO_BAR.get());
                         output.accept(OddBlocks.LACO_TILES.get());
-                        output.accept(OddBlocks.LACO_TILE_SLAB.get());
                         output.accept(OddBlocks.LACO_TILE_STAIRS.get());
+                        output.accept(OddBlocks.LACO_TILE_SLAB.get());
                         if (CompatUtil.checkFarmersDelight()) {
                             output.accept(OddBlocks.LACO_BEAN_BAG.get());
                         } if (CompatUtil.checkNeapolitan()) {
                             output.accept(OddBlocks.LACO_SORBET_BLOCK.get());
                             output.accept(OddItems.LACO_SORBET.get());
                         }
-                        output.accept(OddBlocks.LINEN_CARPET.get());
                         output.accept(OddItems.ALGAE.get());
                         if (CompatUtil.checkFarmersDelight()) {
                             output.accept(OddBlocks.ALGAE_CRATE.get());
@@ -115,9 +120,6 @@ public class OddCreativeTab {
                         output.accept(OddBlocks.SMOOTH_MANASTONE.get());
                         output.accept(OddBlocks.SMOOTH_MANASTONE_SLAB.get());
                         output.accept(OddItems.MANASTONE_TABLET.get());
-                        output.accept(OddBlocks.DUNGEON_STEEL_ORE.get());
-                        output.accept(OddItems.DUNGEON_STEEL.get());
-                        output.accept(OddBlocks.DUNGEON_STEEL_BLOCK.get());
                         //output.accept(OddItems.RAGE_SCONCE.get());
                         //output.accept(OddBlocks.RAGE_LANTERN.get());
                         output.accept(OddBlocks.SHALE.get());
@@ -142,6 +144,9 @@ public class OddCreativeTab {
                         output.accept(OddBlocks.SHORESTONE_BRICK_STAIRS.get());
                         output.accept(OddBlocks.SHORESTONE_BRICK_SLAB.get());
                         output.accept(Items.SUSPICIOUS_GRAVEL);
+                        output.accept(OddBlocks.RUSTY_BASALT.get());
+                        output.accept(OddBlocks.POLISHED_RUSTY_BASALT.get());
+                        output.accept(OddBlocks.SMOOTH_RUSTY_BASALT.get());
                     }).build());
 
     public static void init(IEventBus eventBus) {

@@ -14,108 +14,18 @@
           "children": [
             {
               "type": "minecraft:item",
-              "name": "oddsnends:flax_flowers",
               "conditions": [
                 {
-                  "condition": "minecraft:block_state_property",
                   "block": "oddsnends:flax_crop",
-                  "properties": {
-                    "age": "4"
-                  }
-                },
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": [
-                      "minecraft:shears"
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "oddsnends:flax_flowers",
-              "conditions": [
-                {
                   "condition": "minecraft:block_state_property",
-                  "block": "oddsnends:flax_crop",
-                  "properties": {
-                    "age": "5"
-                  }
-                },
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": [
-                      "minecraft:shears"
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "oddsnends:dried_flax_flowers",
-              "conditions": [
-                {
-                  "condition": "minecraft:block_state_property",
-                  "block": "oddsnends:flax_crop",
                   "properties": {
                     "age": "7"
                   }
-                },
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": [
-                      "minecraft:shears"
-                    ]
-                  }
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:alternatives",
-          "children": [
-            {
-              "type": "minecraft:item",
-              "name": "oddsnends:dried_flax_flowers",
-              "conditions": [
-                {
-                  "condition": "minecraft:block_state_property",
-                  "block": "oddsnends:flax_crop",
-                  "properties": {
-                    "age": "6"
-                  }
-                },
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": [
-                      "minecraft:shears"
-                    ]
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:alternatives",
-          "children": [
+              ],
+              "name": "oddsnends:flax_fibers",
+              "functions": []
+            },
             {
               "type": "minecraft:item",
               "name": "oddsnends:flax_seeds"
@@ -154,6 +64,84 @@
         }
       ],
       "rolls": 1
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "oddsnends:dried_flax_flowers",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "oddsnends:flax_crop",
+              "properties": {
+                "age": "7"
+              }
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": [
+                  "minecraft:shears"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "oddsnends:flax_flowers",
+          "conditions": [
+            {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "oddsnends:flax_crop",
+                  "properties": {
+                    "age": "6"
+                  }
+                },
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "oddsnends:flax_crop",
+                  "properties": {
+                    "age": "5"
+                  }
+                },
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "oddsnends:flax_crop",
+                  "properties": {
+                    "age": "4"
+                  }
+                },
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "oddsnends:flax_crop",
+                  "properties": {
+                    "age": "3"
+                  }
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "items": [
+                  "minecraft:shears"
+                ]
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "random_sequence": "oddsnends:blocks/flax_crop"

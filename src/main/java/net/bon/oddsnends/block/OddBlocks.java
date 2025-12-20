@@ -32,9 +32,9 @@ public class OddBlocks {
            DeferredRegister.create(ForgeRegistries.BLOCKS, OddsNEnds.MOD_ID);
 
    public static final RegistryObject<Block> CIDERINE_BLOSSOM = registerBlockWithoutItem("ciderine_blossom", () ->
-           new CiderineBlossomBlock(BlockBehaviour.Properties.of().noCollission().noOcclusion().instabreak().pushReaction(PushReaction.DESTROY).sound(SoundType.AZALEA_LEAVES)));
+           new CiderineBlossomBlock(BlockBehaviour.Properties.of().noCollission().noOcclusion().instabreak().dynamicShape().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY).sound(SoundType.AZALEA_LEAVES)));
    public static final RegistryObject<Block> CIDERINE_CROP = registerBlockWithoutItem("ciderine_crop", () ->
-           new CiderineCropBlock(BlockBehaviour.Properties.of().noOcclusion().pushReaction(PushReaction.DESTROY).strength(0.3F).sound(SoundType.NETHER_SPROUTS)));
+           new CiderineCropBlock(BlockBehaviour.Properties.of().noOcclusion().pushReaction(PushReaction.DESTROY).dynamicShape().offsetType(BlockBehaviour.OffsetType.XZ).strength(0.3F).sound(SoundType.NETHER_SPROUTS)));
    public static final RegistryObject<Block> CIDERINE = registerBlockWithoutItem("ciderine", () ->
            new HangingCiderineBlock(BlockBehaviour.Properties.of().pushReaction(PushReaction.DESTROY).noOcclusion().strength(0.3F).sound(SoundType.NETHER_SPROUTS)));
    public static final RegistryObject<Block> STRIPPED_CIDERINE_LOG = registerBlock("stripped_ciderine_log", () ->
@@ -98,12 +98,19 @@ public class OddBlocks {
    public static final RegistryObject<Block> LINEN_CARPET = registerBlock("linen_carpet", () ->
            new CarpetBlock(BlockBehaviour.Properties.copy(Blocks.WHITE_CARPET).mapColor(MapColor.TERRACOTTA_WHITE).strength(0.1F).randomTicks().sound(SoundType.WOOL).ignitedByLava()));
 
+   public static final RegistryObject<Block> SPINEROOT = registerBlock("spineroot", () ->
+           new SpinerootBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).noCollission().instabreak().randomTicks().sound(SoundType.CROP).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+//   public static final RegistryObject<Block> CLOVER_GRASS_BLOCK = registerBlock("clover_grass_block", () ->
+//           new GrassBlock(BlockBehaviour.Properties.copy(Blocks.GRASS_BLOCK)));
+   public static final RegistryObject<Block> FIELD_CLOVERS = registerBlock("field_clovers", () ->
+           new CloverBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.CROP).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+   public static final RegistryObject<Block> RUSTY_CLOVERS = registerBlock("rusty_clovers", () ->
+           new CloverBlock(BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_RED).noCollission().instabreak().sound(SoundType.CROP).ignitedByLava().pushReaction(PushReaction.DESTROY)));
 
-
-   public static final RegistryObject<Block> LACO_CROP = registerBlockWithoutItem("laco_crop", () ->
-           new LacoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).mapColor(MapColor.TERRACOTTA_WHITE)));
    public static final RegistryObject<Block> WILD_LACO = registerBlock("wild_laco", () ->
            new WildLacoBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).mapColor(MapColor.TERRACOTTA_WHITE)));
+   public static final RegistryObject<Block> LACO_CROP = registerBlockWithoutItem("laco_crop", () ->
+           new LacoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).mapColor(MapColor.TERRACOTTA_WHITE)));
    public static final RegistryObject<Block> LACO_TILES = registerBlock("laco_tiles", () ->
            new Block(BlockBehaviour.Properties.of().strength(0.5f).mapColor(MapColor.TERRACOTTA_WHITE).sound(SoundType.BAMBOO)));
    public static final RegistryObject<Block> LACO_TILE_STAIRS = registerBlock("laco_tile_stairs", () ->
@@ -158,23 +165,13 @@ public class OddBlocks {
    public static final RegistryObject<Block> MANASTONE_TABLET = registerBlockWithoutItem("manastone_tablet", () ->
            new WallSignBlock(BlockBehaviour.Properties.copy(Blocks.STONE), OddBlockTypes.MANASTONE));
 
-   public static final RegistryObject<Block> DUNGEON_STEEL_ORE = registerBlock("dungeon_steel_ore", () ->
-           new DungeonSteelBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
-   public static final RegistryObject<Block> DUNGEON_STEEL_BLOCK = registerBlock("dungeon_steel_block", () ->
-           new DungeonSteelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+//   public static final RegistryObject<Block> DUNGEON_STEEL_ORE = registerBlock("dungeon_steel_ore", () ->
+//           new DungeonSteelBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)));
+//   public static final RegistryObject<Block> DUNGEON_STEEL_BLOCK = registerBlock("dungeon_steel_block", () ->
+//           new DungeonSteelBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
-
-//   public static final RegistryObject<Block> RAGE_FIRE = registerBlockWithoutItem("rage_fire", () ->
-//           new RageFireBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_FIRE).lightLevel(state -> 14).mapColor(MapColor.COLOR_LIGHT_GREEN)));
-//   public static final RegistryObject<Block> RAGE_SCONCE = registerBlockWithoutItem("rage_sconce", () ->
-//           new RageSconceBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_TORCH).lightLevel(state -> 13)));
-//   public static final RegistryObject<Block> RAGE_WALL_SCONCE = registerBlockWithoutItem("rage_wall_sconce", () ->
-//           new WallRageSconceBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_WALL_TORCH).lightLevel(state -> 13)));
-//   public static final RegistryObject<Block> RAGE_LANTERN = registerBlock("rage_lantern", () ->
-//           new RageLanternBlock(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN).lightLevel(state -> 14)));
-
-   public static final RegistryObject<Block> HANGING_SPAWNER = registerBlock("hanging_spawner", () ->
-           new SpawnerBlock(BlockBehaviour.Properties.copy(Blocks.SPAWNER).mapColor(MapColor.STONE)));
+//   public static final RegistryObject<Block> HANGING_SPAWNER = registerBlock("hanging_spawner", () ->
+//           new SpawnerBlock(BlockBehaviour.Properties.copy(Blocks.SPAWNER).mapColor(MapColor.STONE)));
 
    public static final RegistryObject<Block> SHALE = registerBlock("shale", () ->
            new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE_BRICKS)));
@@ -223,6 +220,14 @@ public class OddBlocks {
    public static final RegistryObject<Block> SHORESTONE_BRICK_SLAB = registerBlock("shorestone_brick_slab", () ->
            new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BRICK_SLAB)));
 
+   public static final RegistryObject<Block> RUSTY_BASALT = registerBlock("rusty_basalt", () ->
+           new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.BASALT)));
+   public static final RegistryObject<Block> POLISHED_RUSTY_BASALT = registerBlock("polished_rusty_basalt", () ->
+           new RotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.POLISHED_BASALT)));
+   public static final RegistryObject<Block> SMOOTH_RUSTY_BASALT = registerBlock("smooth_rusty_basalt", () ->
+           new Block(BlockBehaviour.Properties.copy(Blocks.SMOOTH_BASALT)));
+
+
    public static final RegistryObject<Block> CIDERINE_CRATE = registerBlock("ciderine_crate", () ->
            new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(2.0F).sound(SoundType.WOOD))/*, CompatUtil.FARMERSDELIGHT*/);
    public static final RegistryObject<Block> CIDERINE_BLOCK = registerBlock("ciderine_block", () ->
@@ -263,12 +268,13 @@ public class OddBlocks {
    }
 
    public static <T extends Block> RegistryObject<T> registerCompatBlock(String name, Supplier<T> block, String modId) {
-       RegistryObject<T> toReturn = BLOCK.register(name, block);
-       registerBlockItem(name, toReturn);
-//       if (FMLLoader.getLoadingModList().getModFileById(modId) != null) {
-//           OddItems.ITEM.register(name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
-//       }
-       return toReturn;
+       if (FMLLoader.getLoadingModList().getModFileById(modId) != null) {
+          RegistryObject<T> toReturn = BLOCK.register(name, block);
+          OddItems.ITEM.register(name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
+          return toReturn;
+       } else {
+          return null;
+       }
    }
 
    public static void init(IEventBus eventBus) {

@@ -22,7 +22,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class MandrakeCropBlock extends CropBlock {
     public static final IntegerProperty AGE = BlockStateProperties.AGE_2;
-    private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{Block.box(0.0, 0.0, 0.0, 16.0, 2.0, 16.0), Block.box(0.0, 0.0, 0.0, 16.0, 4.0, 16.0), Block.box(0.0, 0.0, 0.0, 16.0, 6.0, 16.0)};
+    private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{Block.box(2.0, 0.0, 2.0, 14.0, 2.0, 14.0), Block.box(2.0, 0.0, 2.0, 14.0, 4.0, 14.0), Block.box(2.0, 0.0, 2.0, 14.0, 6.0, 14.0)};
 
     public MandrakeCropBlock(Properties properties) {
         super(properties);
@@ -36,23 +36,28 @@ public class MandrakeCropBlock extends CropBlock {
         return 2;
     }
 
+    @Override
+    public boolean isRandomlyTicking(BlockState state) {
+        return true;
+    }
+
     protected ItemLike getBaseSeedId() {
         return OddItems.MANDRAKE_SEEDS.get();
     }
 
     public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource source) {
-        if (source.nextInt(2) != 0) {
+        if (source.nextInt(2) != 0 && state.getValue(AGE) <= 1) {
             super.randomTick(state, level, pos, source);
-        } if (source.nextInt(2) == 0) {
-            level.setBlockAndUpdate(pos, OddBlocks.MANDRAKE.get().defaultBlockState());
+        } if (source.nextInt(2) != 0 && state.getValue(AGE) == 2) {
+            level.setBlockAndUpdate(pos, OddBlocks.MANDRAKE.get().defaultBlockState().setValue(MandrakeBlock.GROWING, true));
         }
     }
 
     public void performBonemeal(ServerLevel level, RandomSource source, BlockPos pos, BlockState state) {
-        if(state.getValue(AGE) < 2) {
+        if(state.getValue(AGE) <= 1) {
             this.growCrops(level, pos, state);
-        } if(state.getValue(AGE) == 2) {
-            level.setBlockAndUpdate(pos, OddBlocks.MANDRAKE.get().defaultBlockState());
+        } if (state.getValue(AGE) == 2) {
+            level.setBlockAndUpdate(pos, OddBlocks.MANDRAKE.get().defaultBlockState().setValue(MandrakeBlock.GROWING, true));
         }
     }
 

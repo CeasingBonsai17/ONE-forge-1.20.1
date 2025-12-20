@@ -19,12 +19,27 @@
     "oddsnends:ciderine_wall_sign",
     "oddsnends:ciderine_wall_hanging_sign",
     "oddsnends:ciderine_hanging_sign",
-    "oddsnends:ciderine_block",
+    {
+      "id": "oddsnends:ciderine_block",
+      "required": false
+    },
     "oddsnends:ciderine_crop",
     "oddsnends:ciderine",
-    "oddsnends:ciderine_crate",
-    "oddsnends:algae_crate",
-    "oddsnends:mandrake_crate",
-    "oddsnends:peeled_mandrake_crate"
+    {
+      "id": "oddsnends:ciderine_crate",
+      "required": false
+    },
+    {
+      "id": "oddsnends:algae_crate",
+      "required": false
+    },
+    {
+      "id": "oddsnends:mandrake_crate",
+      "required": false
+    },
+    {
+      "id": "oddsnends:peeled_mandrake_crate",
+      "required": false
+    }
   ]
 }

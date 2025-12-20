@@ -18,5 +18,13 @@
       "block/suspicious_sand/break6"
     ],
     "subtitle": "subtitles.block.generic.break"
+  },
+  "item.ice_cream.eat": {
+    "sounds": [
+      "neapolitan:item/ice_cream/eat1",
+      "neapolitan:item/ice_cream/eat2",
+      "neapolitan:item/ice_cream/eat3"
+    ],
+    "subtitle": "subtitles.neapolitan.item.ice_cream.eat"
   }
 }

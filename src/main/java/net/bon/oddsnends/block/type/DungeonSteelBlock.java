@@ -21,7 +21,7 @@ public class DungeonSteelBlock extends Block {
 
     public DungeonSteelBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState((BlockState) this.defaultBlockState().setValue(SUBMERGED, false));
+        this.registerDefaultState(this.defaultBlockState().setValue(SUBMERGED, false));
     }
 
     public BlockState updateShape(BlockState state, Direction direction, BlockState blockState, LevelAccessor level, BlockPos pos, BlockPos blockPos) {

@@ -49,15 +49,25 @@
       "type": "minecraft:weighted_state_provider",
       "entries": [
         {
-          "weight": 18,
+          "weight": 3,
           "data": {
-            "Name": "oddsnends:ciderine_leaves"
+            "Name": "oddsnends:ciderine_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
           }
         },
         {
-          "weight": 32,
+          "weight": 1,
           "data": {
-            "Name": "oddsnends:flowering_ciderine_leaves"
+            "Name": "oddsnends:flowering_ciderine_leaves",
+            "Properties": {
+              "distance": "7",
+              "persistent": "false",
+              "waterlogged": "false"
+            }
           }
         }
       ]

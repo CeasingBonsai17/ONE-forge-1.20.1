@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "oddsnends:flax_bale"
+    "oddsnends:flax_bale",
+    {
+      "id": "oddsnends:laco_bean_bag",
+      "required": false
+    }
   ]
 }

@@ -1,13 +1,20 @@
 package net.bon.oddsnends.block.type;
 
+import net.bon.oddsnends.OddConfig;
 import net.bon.oddsnends.block.OddBlocks;
 import net.bon.oddsnends.item.OddItems;
 import net.bon.oddsnends.util.OddTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.FallingBlockEntity;
+import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -18,6 +25,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
@@ -57,11 +66,34 @@ public class CiderineCropBlock extends FallingBlock implements BonemealableBlock
     public BlockState updateShape(BlockState state, Direction direction, BlockState blockState, LevelAccessor level, BlockPos pos, BlockPos blockPos) {
         return !state.canSurvive(level, pos) && state.getValue(AGE) < 3 ? Blocks.AIR.defaultBlockState() : super.updateShape(state, direction, state, level, pos, blockPos);
     }
+
+    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
+        if (!player.isSecondaryUseActive() && OddConfig.clickHarvestCiderines && state.getValue(AGE) == 3) {
+            level.playSound(player, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.CAVE_VINES_BREAK, SoundSource.BLOCKS, 1.0f, 1.0f);
+
+            level.setBlockAndUpdate(pos, OddBlocks.CIDERINE_BLOSSOM.get().defaultBlockState().setValue(CiderineBlossomBlock.POLLINATED, !OddConfig.ciderineRequirePollinationToGrow));
+            level.addFreshEntity(new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, new ItemStack(OddItems.CIDERINE.get(), 1)));
+            return InteractionResult.sidedSuccess(level.isClientSide);
+        }
+        return InteractionResult.PASS;
+    }
+
     public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
         return level.getBlockState(pos.above()).is(OddTags.CIDERINE_LEAVES);
     }
 
-    public ItemStack getCloneItemStack(BlockGetter p_52254_, BlockPos p_52255_, BlockState p_52256_) {
+    @Override
+    public float getMaxHorizontalOffset() {
+        float offset;
+        if (OddConfig.ciderineCropXZRandomization) {
+            offset = super.getMaxHorizontalOffset();
+        } else {
+            offset = 0.0f;
+        }
+        return offset;
+    }
+
+    public ItemStack getCloneItemStack(BlockGetter block, BlockPos pos, BlockState state) {
         return new ItemStack(OddItems.CIDERINE.get());
     }
 
@@ -72,7 +104,7 @@ public class CiderineCropBlock extends FallingBlock implements BonemealableBlock
     }
 
     @Override
-    public void animateTick(BlockState p_221129_, Level p_221130_, BlockPos p_221131_, RandomSource p_221132_) {
+    public void animateTick(BlockState state, Level level, BlockPos pos, RandomSource random) {
     }
 
     @Override
@@ -81,6 +113,7 @@ public class CiderineCropBlock extends FallingBlock implements BonemealableBlock
     }
 
     public VoxelShape getShape(BlockState state, BlockGetter view, BlockPos pos, CollisionContext context) {
-        return SHAPE_BY_AGE[state.getValue(AGE)];
+        Vec3 vec3 = state.getOffset(view, pos);
+        return SHAPE_BY_AGE[state.getValue(AGE)].move(vec3.x, vec3.y, vec3.z);
     }
  }
