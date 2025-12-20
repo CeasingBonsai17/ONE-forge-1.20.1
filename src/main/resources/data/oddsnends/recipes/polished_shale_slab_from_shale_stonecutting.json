@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "oddsnends:shale"
+  },
+  "result": "oddsnends:polished_shale_slab"
+}

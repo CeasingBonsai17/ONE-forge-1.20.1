@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "oddsnends:cave_branches",
+  "step": "vegetal_decoration"
+}

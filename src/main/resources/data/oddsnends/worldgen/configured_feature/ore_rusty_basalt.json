@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:dripstone_block"
+        },
+        "state": {
+          "Name": "oddsnends:rusty_basalt",
+          "Properties": {
+            "axis": "y"
+          }
+        }
+      }
+    ],
+    "size": 64,
+    "discard_chance_on_air_exposure": 0
+  }
+}

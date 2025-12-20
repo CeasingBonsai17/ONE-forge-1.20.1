@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "oddsnends:shale"
+  },
+  "result": "oddsnends:shale_bricks"
+}

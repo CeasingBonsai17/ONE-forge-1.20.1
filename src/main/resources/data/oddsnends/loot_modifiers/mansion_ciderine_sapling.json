@@ -1,0 +1,16 @@
+{
+  "type": "oddsnends:add_item",
+  "conditions": [
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.45
+    },
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/woodland_mansion"
+    }
+  ],
+  "weight": 11,
+  "item": "oddsnends:ciderine_sapling",
+  "count": 2
+}

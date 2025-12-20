@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": "oddsnends:cave_branches",
+      "placement": [
+      ]
+  },
+    "tries": 100,
+    "xz_spread": 4,
+    "y_spread": 4
+  }
+}

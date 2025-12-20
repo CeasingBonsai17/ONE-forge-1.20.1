@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": "oddsnends:wild_laco",
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:water"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": [
+                  "minecraft:dirt",
+                  "minecraft:grass_block",
+                  "minecraft:sand"
+                ],
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "minecraft:surface_water_depth_filter",
+          "max_water_depth": 1
+        }
+      ]
+    },
+    "tries": 70,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

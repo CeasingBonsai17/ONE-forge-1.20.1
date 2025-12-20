@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "root_stage=0": {
+      "model": "oddsnends:block/spineroot_stage_0"
+    },
+    "root_stage=1": {
+      "model": "oddsnends:block/spineroot_stage_0"
+    },
+    "root_stage=2": {
+      "model": "oddsnends:block/spineroot_stage_1"
+    },
+    "root_stage=3": {
+      "model": "oddsnends:block/spineroot_stage_2"
+    }
+  }
+}

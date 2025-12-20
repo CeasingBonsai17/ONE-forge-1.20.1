@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#oddsnends:spawns_field_clovers",
+  "features": "oddsnends:patch_field_clovers",
+  "step": "vegetal_decoration"
+}

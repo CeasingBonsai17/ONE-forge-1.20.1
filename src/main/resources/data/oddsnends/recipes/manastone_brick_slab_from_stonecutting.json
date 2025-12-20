@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "oddsnends:manastone_bricks"
+  },
+  "result": "oddsnends:manastone_brick_slab"
+}

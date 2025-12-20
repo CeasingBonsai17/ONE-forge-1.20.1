@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#oddsnends:spawns_giant_padmas",
+  "features": "oddsnends:patch_giant_padma",
+  "step": "vegetal_decoration"
+}

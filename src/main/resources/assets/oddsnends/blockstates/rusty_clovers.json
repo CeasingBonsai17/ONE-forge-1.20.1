@@ -1,0 +1,55 @@
+{
+	"variants": {
+		"clovers=3": [
+			{
+				"model": "oddsnends:block/rusty_clovers"
+			},
+			{
+				"model": "oddsnends:block/rusty_clovers",
+				"y": 90
+			},
+			{
+				"model": "oddsnends:block/rusty_clovers",
+				"y": 180
+			},
+			{
+				"model": "oddsnends:block/rusty_clovers",
+				"y": 270
+			}
+		],
+		"clovers=2": [
+			{
+				"model": "oddsnends:block/rusty_clovers_1"
+			},
+			{
+				"model": "oddsnends:block/rusty_clovers_1",
+				"y": 90
+			},
+			{
+				"model": "oddsnends:block/rusty_clovers_1",
+				"y": 180
+			},
+			{
+				"model": "oddsnends:block/rusty_clovers_1",
+				"y": 270
+			}
+		],
+		"clovers=1": [
+			{
+				"model": "oddsnends:block/rusty_clovers_2"
+			},
+			{
+				"model": "oddsnends:block/rusty_clovers_2",
+				"y": 90
+			},
+			{
+				"model": "oddsnends:block/rusty_clovers_2",
+				"y": 180
+			},
+			{
+				"model": "oddsnends:block/rusty_clovers_2",
+				"y": 270
+			}
+		]
+	}
+}

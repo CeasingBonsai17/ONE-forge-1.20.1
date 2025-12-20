@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "oddsnends:rough_quartz"
+  },
+  "result": "oddsnends:rough_quartz_slab"
+}

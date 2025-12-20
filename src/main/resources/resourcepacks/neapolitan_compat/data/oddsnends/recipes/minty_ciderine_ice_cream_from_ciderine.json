@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oddsnends:ciderine"
+    },
+    {
+      "item": "neapolitan:mint_ice_cream"
+    }
+  ],
+  "result": {
+    "item": "oddsnends:minty_ciderine_ice_cream"
+  }
+}

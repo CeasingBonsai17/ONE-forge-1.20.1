@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#oddsnends:spawns_rusty_clovers",
+  "features": "oddsnends:patch_rusty_clovers",
+  "step": "vegetal_decoration"
+}

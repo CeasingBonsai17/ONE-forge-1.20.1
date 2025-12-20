@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#oddsnends:spawns_wild_laco",
+  "features": "oddsnends:wild_laco",
+  "step": "vegetal_decoration"
+}

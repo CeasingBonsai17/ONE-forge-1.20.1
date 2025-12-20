@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "oddsnends:manastone"
+  },
+  "result": "oddsnends:manastone_brick_wall"
+}

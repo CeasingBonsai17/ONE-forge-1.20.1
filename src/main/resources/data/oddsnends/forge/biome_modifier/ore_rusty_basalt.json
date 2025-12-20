@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#oddsnends:spawns_rusty_basalt",
+  "features": "oddsnends:ore_rusty_basalt",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "oddsnends:smooth_manastone"
+  },
+  "result": "oddsnends:smooth_manastone_slab"
+}

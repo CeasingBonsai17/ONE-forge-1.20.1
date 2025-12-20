@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "oddsnends:block/polished_rusty_basalt_top",
+    "side": "oddsnends:block/polished_rusty_basalt"
+  }
+}
