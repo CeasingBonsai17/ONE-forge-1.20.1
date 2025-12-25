@@ -70,7 +70,6 @@ public class CiderineCropBlock extends FallingBlock implements BonemealableBlock
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (!player.isSecondaryUseActive() && OddConfig.clickHarvestCiderines && state.getValue(AGE) == 3) {
             level.playSound(player, pos.getX(), pos.getY(), pos.getZ(), SoundEvents.CAVE_VINES_BREAK, SoundSource.BLOCKS, 1.0f, 1.0f);
-
             level.setBlockAndUpdate(pos, OddBlocks.CIDERINE_BLOSSOM.get().defaultBlockState().setValue(CiderineBlossomBlock.POLLINATED, !OddConfig.ciderineRequirePollinationToGrow));
             level.addFreshEntity(new ItemEntity(level, pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5, new ItemStack(OddItems.CIDERINE.get(), 1)));
             return InteractionResult.sidedSuccess(level.isClientSide);

@@ -2,27 +2,72 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.5,
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        },
-        {
-          "condition": "minecraft:block_state_property",
-          "block": "oddsnends:wild_laco",
-          "properties": {
-            "half": "lower"
-          }
-        }
-      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "oddsnends:laco_beans"
+          "name": "oddsnends:laco_beans",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "items": [],
+                  "enchantments": [
+                    {
+                      "enchantment": "minecraft:silk_touch"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "oddsnends:wild_laco",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
         }
       ],
-      "rolls": 1
+      "functions": []
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "oddsnends:wild_laco",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "enchantments": [
+                  {
+                    "enchantment": "minecraft:silk_touch"
+                  }
+                ]
+              }
+            },
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "oddsnends:wild_laco",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ]
+        }
+      ],
+      "functions": []
     }
   ],
-  "random_sequence": "oddsnends:blocks/wild_laco"
+  "functions": [],
+  "random_sequence": "oddsnends:block/wild_laco"
 }

@@ -5,7 +5,6 @@ import net.bon.oddsnends.block.OddBlocks;
 import net.bon.oddsnends.util.CompatUtil;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -22,10 +21,6 @@ public class OddCreativeTab {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(OddItems.LINEN_PATCH.get()))
                     .title(Component.translatable("creativetab.oddsnends"))
                     .displayItems((parameters, output) -> {
-                        //if (CompatUtil.checkNeapolitan()) {
-                        //    output.accept(OddBlocks.ANTHESI_ICE_CREAM_BLOCK.get());
-                        //    output.accept(OddItems.ANTHESI_ICE_CREAM.get());
-                        //}
                         output.accept(OddBlocks.CIDERINE_LOG.get());
                         output.accept(OddBlocks.CIDERINE_WOOD.get());
                         output.accept(OddBlocks.STRIPPED_CIDERINE_LOG.get());
@@ -52,6 +47,7 @@ public class OddCreativeTab {
                         } if (CompatUtil.checkNeapolitan()) {
                             output.accept(OddBlocks.CIDERINE_ICE_CREAM_BLOCK.get());
                             output.accept(OddItems.CIDERINE_ICE_CREAM.get());
+                            output.accept(OddItems.CIDERINE_MILKSHAKE.get());
                             output.accept(OddItems.MINTY_CIDERINE_ICE_CREAM.get());
                         }
                         output.accept(OddBlocks.CIDERINE_SAPLING.get());
@@ -59,6 +55,21 @@ public class OddCreativeTab {
                         output.accept(OddItems.CIDERINE_HANGING_SIGN.get());
 //                        output.accept(OddItems.CIDERINE_BOAT.get());
 //                        output.accept(OddItems.CIDERINE_CHEST_BOAT.get());
+                        output.accept(OddBlocks.WILD_ANTHESI.get());
+                        output.accept(OddItems.ANTHESI_PIT.get());
+                        output.accept(OddItems.ANTHESI_FRUIT.get());
+                        output.accept(OddItems.ANTHESI_FRUIT_HALF.get());
+                        if (CompatUtil.checkFarmersDelight()) {
+                            output.accept(OddBlocks.ANTHESI_CRATE.get());
+                        }
+                        output.accept(OddBlocks.ANTHESI_CAKE.get());
+                        if (CompatUtil.checkFarmersDelight()) {
+                            output.accept(OddItems.ANTHESI_CAKE_SLICE.get());
+                        } if (CompatUtil.checkNeapolitan()) {
+                            output.accept(OddBlocks.ANTHESI_ICE_CREAM_BLOCK.get());
+                            output.accept(OddItems.ANTHESI_ICE_CREAM.get());
+                            output.accept(OddItems.ANTHESI_MILKSHAKE.get());
+                        }
                         output.accept(OddBlocks.FLAX_FLOWERS.get());
                         output.accept(OddBlocks.DRIED_FLAX_FLOWERS.get());
                         output.accept(OddItems.FLAX_SEEDS.get());
@@ -84,6 +95,7 @@ public class OddCreativeTab {
                         } if (CompatUtil.checkNeapolitan()) {
                             output.accept(OddBlocks.LACO_SORBET_BLOCK.get());
                             output.accept(OddItems.LACO_SORBET.get());
+                            output.accept(OddItems.LACO_SLUSHIE.get());
                         }
                         output.accept(OddItems.ALGAE.get());
                         if (CompatUtil.checkFarmersDelight()) {
@@ -104,7 +116,9 @@ public class OddCreativeTab {
                         } if (CompatUtil.checkNeapolitan()) {
                             output.accept(OddBlocks.MANDRAKE_ICE_CREAM_BLOCK.get());
                             output.accept(OddItems.MANDRAKE_ICE_CREAM.get());
+                            output.accept(OddItems.MANDRAKE_MILKSHAKE.get());
                         }
+                        output.accept(OddItems.LACO_COVERED_MANDRAKE.get());
                         output.accept(OddBlocks.MANASTONE.get());
                         output.accept(OddBlocks.MANASTONE_STAIRS.get());
                         output.accept(OddBlocks.MANASTONE_SLAB.get());

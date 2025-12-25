@@ -80,13 +80,19 @@ public class OddBlocks {
    public static final RegistryObject<Block> CIDERINE_WALL_HANGING_SIGN = registerBlockWithoutItem("ciderine_wall_hanging_sign", () ->
            new WallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN).dropsLike(CIDERINE_HANGING_SIGN.get()).mapColor(MapColor.RAW_IRON), OddBlockTypes.CIDERINE));
 
+   public static final RegistryObject<Block> ANTHESI_CROP = registerBlock("anthesi_crop", () ->
+           new AnthesiCropBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+   public static final RegistryObject<Block> WILD_ANTHESI = registerBlock("wild_anthesi", () ->
+           new WildAnthesiBlock(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY)));
+   public static final RegistryObject<Block> ANTHESI_CAKE = registerBlock("anthesi_cake", () ->
+           new AnthesiCakeBlock(BlockBehaviour.Properties.copy(Blocks.CAKE)));
 
    public static final RegistryObject<Block> FLAX_FLOWERS = registerBlock("flax_flowers", () ->
-           new FlaxFlowerBlock(MobEffects.SATURATION, 7, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+           new FlaxFlowerBlock(MobEffects.DAMAGE_BOOST, 7, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
    public static final RegistryObject<Block> POTTED_FLAX = registerBlockWithoutItem("potted_flax", () ->
            new FlowerPotBlock(FLAX_FLOWERS.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
    public static final RegistryObject<Block> DRIED_FLAX_FLOWERS = registerBlock("dried_flax_flowers", () ->
-           new DriedFlaxFlowerBlock(MobEffects.SATURATION, 7, BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
+           new DriedFlaxFlowerBlock(MobEffects.DAMAGE_BOOST, 7, BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).noCollission().instabreak().sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ).ignitedByLava().pushReaction(PushReaction.DESTROY)));
    public static final RegistryObject<Block> POTTED_DRIED_FLAX = registerBlockWithoutItem("potted_dried_flax", () ->
            new FlowerPotBlock(DRIED_FLAX_FLOWERS.get(), BlockBehaviour.Properties.of().instabreak().noOcclusion().pushReaction(PushReaction.DESTROY)));
    public static final RegistryObject<Block> FLAX_CROP = registerBlockWithoutItem("flax_crop", () ->
@@ -228,13 +234,15 @@ public class OddBlocks {
            new Block(BlockBehaviour.Properties.copy(Blocks.SMOOTH_BASALT)));
 
 
-   public static final RegistryObject<Block> CIDERINE_CRATE = registerBlock("ciderine_crate", () ->
-           new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(2.0F).sound(SoundType.WOOD))/*, CompatUtil.FARMERSDELIGHT*/);
-   public static final RegistryObject<Block> CIDERINE_BLOCK = registerBlock("ciderine_block", () ->
-           new CiderineBlock(6, 0.6f, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).instrument(NoteBlockInstrument.DIDGERIDOO).sound(SoundType.WOOD).mapColor(MapColor.CRIMSON_STEM).pushReaction(PushReaction.DESTROY).strength(1f)));
-   public static final RegistryObject<Block> CIDERINE_ICE_CREAM_BLOCK = registerBlock("ciderine_ice_cream_block", () ->
-           new Block(BlockBehaviour.Properties.of().mapColor(MapColor.RAW_IRON).instrument(NoteBlockInstrument.CHIME).strength(0.2F).sound(SoundType.SNOW)));
-    public static final RegistryObject<Block> ANTHESI_ICE_CREAM_BLOCK = registerCompatBlock("anthesi_ice_cream_block", () ->
+   public static final RegistryObject<Block> CIDERINE_CRATE = registerCompatBlock("ciderine_crate", () ->
+           new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(2.0F).sound(SoundType.WOOD)), CompatUtil.FARMERSDELIGHT);
+   public static final RegistryObject<Block> CIDERINE_BLOCK = registerCompatBlock("ciderine_block", () ->
+           new CiderineBlock(6, 0.6f, BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).instrument(NoteBlockInstrument.DIDGERIDOO).sound(SoundType.WOOD).mapColor(MapColor.CRIMSON_STEM).pushReaction(PushReaction.DESTROY).strength(1f)), CompatUtil.BOUNTIFULFARES);
+   public static final RegistryObject<Block> CIDERINE_ICE_CREAM_BLOCK = registerCompatBlock("ciderine_ice_cream_block", () ->
+           new Block(BlockBehaviour.Properties.of().mapColor(MapColor.RAW_IRON).instrument(NoteBlockInstrument.CHIME).strength(0.2F).sound(SoundType.SNOW)), CompatUtil.NEAPOLITAN);
+   public static final RegistryObject<Block> ANTHESI_CRATE = registerCompatBlock("anthesi_crate", () ->
+           new Block(BlockBehaviour.Properties.copy(CIDERINE_CRATE.get())), CompatUtil.FARMERSDELIGHT);
+   public static final RegistryObject<Block> ANTHESI_ICE_CREAM_BLOCK = registerCompatBlock("anthesi_ice_cream_block", () ->
            new Block(BlockBehaviour.Properties.copy(CIDERINE_ICE_CREAM_BLOCK.get()).mapColor(MapColor.TERRACOTTA_WHITE)), CompatUtil.NEAPOLITAN);
    public static final RegistryObject<Block> LACO_BEAN_BAG = registerCompatBlock("laco_bean_bag", () ->
            new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)), CompatUtil.FARMERSDELIGHT);

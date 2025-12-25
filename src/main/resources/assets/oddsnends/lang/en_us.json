@@ -5,8 +5,6 @@
 
   "creativetab.oddsnends": "Odds n' Ends",
 
-  "item.oddsnends.anthesi_ice_cream": "Anthesi Ice Cream",
-  "block.oddsnends.anthesi_ice_cream_block": "Anthesi Ice Cream Block",
 
   "block.oddsnends.ciderine_blossom": "Ciderine Blossom",
   "block.oddsnends.ciderine_crop": "Ciderine Crop",
@@ -36,12 +34,25 @@
   "item.oddsnends.ciderine_cider_jar": "Ciderine Cider Jar",
   "block.oddsnends.ciderine_ice_cream_block": "Ciderine Ice Cream Block",
   "item.oddsnends.ciderine_ice_cream": "Ciderine Ice Cream",
+  "item.oddsnends.ciderine_milkshake": "Ciderine Milkshake",
   "item.oddsnends.minty_ciderine_ice_cream": "Minty Ciderine Ice Cream",
 
   "block.oddsnends.ciderine_sapling": "Ciderine Sapling",
-
   "block.oddsnends.ciderine_sign": "Ciderine Sign",
   "block.oddsnends.ciderine_hanging_sign": "Ciderine Hanging Sign",
+
+  "block.oddsnends.wild_anthesi": "Wild Anthesi",
+  "item.oddsnends.anthesi_pit": "Anthesi Pit",
+  "block.oddsnends.anthesi_crop": "Anthesi Crop",
+  "item.oddsnends.anthesi_fruit": "Anthesi Fruit",
+  "item.oddsnends.anthesi_fruit_half": "Anthesi Fruit Half",
+  "block.oddsnends.anthesi_cake": "Anthesi Cake",
+
+  "block.oddsnends.anthesi_cake_slice": "Anthesi Cake Slice",
+  "block.oddsnends.anthesi_crate": "Anthesi Crate",
+  "item.oddsnends.anthesi_ice_cream": "Anthesi Ice Cream",
+  "block.oddsnends.anthesi_ice_cream_block": "Anthesi Ice Cream Block",
+  "item.oddsnends.anthesi_milkshake": "Anthesi Milkshake",
 
   "block.oddsnends.flax_flowers": "Flax Flowers",
   "block.oddsnends.potted_flax": "Potted Flax Flowers",
@@ -74,6 +85,7 @@
   "block.oddsnends.laco_bean_bag": "Laco Bean Bag",
   "block.oddsnends.laco_sorbet_block": "Laco Sorbet Block",
   "item.oddsnends.laco_sorbet": "Laco Sorbet",
+  "item.oddsnends.laco_slushie": "Laco Slushie",
 
   "block.oddsnends.algae": "Algae",
   "block.oddsnends.algae_crate": "Algae Crate",
@@ -92,6 +104,8 @@
   "block.oddsnends.peeled_mandrake_crate": "Peeled Mandrake Crate",
   "block.oddsnends.mandrake_ice_cream_block": "Mandrake Ice Cream Block",
   "item.oddsnends.mandrake_ice_cream": "Mandrake Ice Cream",
+  "item.oddsnends.mandrake_milkshake": "Mandrake Milkshake",
+  "item.oddsnends.laco_covered_mandrake": "Laco Covered Mandrake",
 
   "block.oddsnends.manastone": "Manastone",
   "block.oddsnends.manastone_stairs": "Manastone Stairs",

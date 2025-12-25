@@ -11,21 +11,27 @@ public class OddConfig
 {
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 
-    private static final ForgeConfigSpec.BooleanValue ITEM_EFFECT_TOOLTIPS = BUILDER
-            .comment("Whether to show the tooltip for effects on some odd items")
-            .define("itemEffectTooltips", true);
+    private static final ForgeConfigSpec.BooleanValue FD_COMPAT_EFFECT_TOOLTIPS = BUILDER
+            .comment("Whether to show the tooltip for effects on Farmer's Delight Compat Items")
+            .define("FDCompatEffectTooltips", true);
     private static final ForgeConfigSpec.BooleanValue CIDERINE_REQUIRE_POLLINATION_TO_GROW = BUILDER
             .comment("Whether Ciderine Blossoms need to be pollinated by bees/bats before they can grow")
             .define("ciderineRequirePollinationToGrow", true);
     private static final ForgeConfigSpec.BooleanValue CIDERINE_CROP_XZ_RANDOMIZATION = BUILDER
             .comment("Whether Ciderine Crops have random positioning on the block they're on")
-            .define("ciderineCropXZRandomization", true);
+            .define("ciderineCropXZRandomization", false);
+    private static final ForgeConfigSpec.BooleanValue ANTHESI_CROP_XZ_RANDOMIZATION = BUILDER
+            .comment("Whether Anthesi Crops have random positioning on the block they're on")
+            .define("anthesiCropXZRandomization", false);
     private static final ForgeConfigSpec.BooleanValue CLICK_HARVEST_CIDERINES = BUILDER
             .comment("Whether you can click Ciderines to harvest them")
-            .define("clickHarvestCiderines", true);
+            .define("clickHarvestCiderines", false);
     private static final ForgeConfigSpec.BooleanValue CLICK_HARVEST_MANDRAKES = BUILDER
             .comment("Whether you can click Mandrakes to harvest them")
             .define("clickHarvestMandrakes", true);
+    private static final ForgeConfigSpec.BooleanValue CLICK_HARVEST_ANTHESI = BUILDER
+            .comment("Whether you can click Anthesi crops to harvest them")
+            .define("clickHarvestAnthesi", true);
 
 //    private static final ForgeConfigSpec.IntValue MAGIC_NUMBER = BUILDER
 //            .comment("A magic number")
@@ -42,28 +48,31 @@ public class OddConfig
 
     static final ForgeConfigSpec SPEC = BUILDER.build();
 
-    public static boolean itemEffectTooltips;
+    public static boolean FDCompatEffectTooltips;
     public static boolean ciderineRequirePollinationToGrow;
     public static boolean ciderineCropXZRandomization;
+    public static boolean anthesiCropXZRandomization;
     public static boolean clickHarvestCiderines;
     public static boolean clickHarvestMandrakes;
+    public static boolean clickHarvestAnthesi;
+
 //    public static int magicNumber;
 //    public static String magicNumberIntroduction;
 //    public static Set<Item> items;
 //
-//    private static boolean validateItemName(final Object obj)
-//    {
+//    private static boolean validateItemName(final Object obj) {
 //        return obj instanceof final String itemName && ForgeRegistries.ITEMS.containsKey(new ResourceLocation(itemName));
 //    }
 
     @SubscribeEvent
-    static void onLoad(final ModConfigEvent event)
-    {
-        itemEffectTooltips = ITEM_EFFECT_TOOLTIPS.get();
+    static void onLoad(final ModConfigEvent event) {
+        FDCompatEffectTooltips = FD_COMPAT_EFFECT_TOOLTIPS.get();
         ciderineRequirePollinationToGrow = CIDERINE_REQUIRE_POLLINATION_TO_GROW.get();
         ciderineCropXZRandomization = CIDERINE_CROP_XZ_RANDOMIZATION.get();
+        anthesiCropXZRandomization = ANTHESI_CROP_XZ_RANDOMIZATION.get();
         clickHarvestCiderines = CLICK_HARVEST_CIDERINES.get();
         clickHarvestMandrakes = CLICK_HARVEST_MANDRAKES.get();
+        clickHarvestAnthesi = CLICK_HARVEST_ANTHESI.get();
 //        magicNumber = MAGIC_NUMBER.get();
 //        magicNumberIntroduction = MAGIC_NUMBER_INTRODUCTION.get();
 

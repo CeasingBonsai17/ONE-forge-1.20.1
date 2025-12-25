@@ -2,9 +2,7 @@ package net.bon.oddsnends.item;
 
 import net.bon.oddsnends.OddsNEnds;
 import net.bon.oddsnends.block.OddBlocks;
-import net.bon.oddsnends.item.type.CiderineCiderItem;
-import net.bon.oddsnends.item.type.ContentBookItem;
-import net.bon.oddsnends.item.type.IceCreamItem;
+import net.bon.oddsnends.item.type.*;
 import net.bon.oddsnends.util.CompatUtil;
 import net.minecraft.core.Direction;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -74,29 +72,47 @@ public class OddItems {
     public static final RegistryObject<Item> PEELED_MANDRAKE = ITEM.register("peeled_mandrake", () ->
             new Item(new Item.Properties().food(OddFoods.PEELED_MANDRAKE)));
 
+    public static final RegistryObject<Item> LACO_COVERED_MANDRAKE = ITEM.register("laco_covered_mandrake", () ->
+            new Item(new Item.Properties().food(OddFoods.LACO_COVERED_MANDRAKE)));
 //    public static final RegistryObject<Item> DUNGEON_STEEL = ITEM.register("dungeon_steel", () ->
 //            new Item(new Item.Properties()));
 
     //public static final RegistryObject<Item> RAGE_SCONCE = ITEM.register("rage_sconce", () ->
     //        new StandingAndWallBlockItem(OddBlocks.RAGE_SCONCE.get(), OddBlocks.RAGE_WALL_SCONCE.get(), new Item.Properties(), Direction.DOWN));
 
-//    public static final RegistryObject<Item> ANTHESI_PIT = ITEM.register("anthesi_pit", () ->
-//            new Item(new Item.Properties()));
-//
+    public static final RegistryObject<Item> ANTHESI_PIT = ITEM.register("anthesi_pit", () ->
+            new ItemNameBlockItem(OddBlocks.ANTHESI_CROP.get(), new Item.Properties()));
+    public static final RegistryObject<Item> ANTHESI_FRUIT = ITEM.register("anthesi_fruit", () ->
+            new AnthesiFruitItem(new Item.Properties().food(OddFoods.ANTHESI_FRUIT)));
+    public static final RegistryObject<Item> ANTHESI_FRUIT_HALF = ITEM.register("anthesi_fruit_half", () ->
+            new Item(new Item.Properties().food(OddFoods.ANTHESI_FRUIT_HALF)));
+    public static final RegistryObject<Item> ANTHESI_CAKE_SLICE = registerCompatItem("anthesi_cake_slice", () ->
+            new Item(new Item.Properties().food(OddFoods.ANTHESI_CAKE_SLICE)), CompatUtil.FARMERSDELIGHT);
+
+
 //    public static final RegistryObject<Item> BOOK_OF_CONTENT = ITEM.register("book_of_content", () ->
 //            new ContentBookItem(new Item.Properties().stacksTo(1)));
 
 
     public static final RegistryObject<Item> CIDERINE_ICE_CREAM = registerCompatItem("ciderine_ice_cream", () ->
             new IceCreamItem(new Item.Properties().food(OddFoods.CIDERINE_ICE_CREAM)), CompatUtil.NEAPOLITAN);
+    public static final RegistryObject<Item> CIDERINE_MILKSHAKE = registerCompatItem("ciderine_milkshake", () ->
+            new MilkshakeItem(new Item.Properties().food(OddFoods.CIDERINE_MILKSHAKE)), CompatUtil.NEAPOLITAN);
     public static final RegistryObject<Item> MINTY_CIDERINE_ICE_CREAM = registerCompatItem("minty_ciderine_ice_cream", () ->
             new IceCreamItem(new Item.Properties().food(OddFoods.MINTY_CIDERINE_ICE_CREAM)), CompatUtil.NEAPOLITAN);
     public static final RegistryObject<Item> ANTHESI_ICE_CREAM = registerCompatItem("anthesi_ice_cream", () ->
-            new IceCreamItem(new Item.Properties().food(OddFoods.ICE_CREAM)), CompatUtil.NEAPOLITAN);
+            new IceCreamItem(new Item.Properties().food(OddFoods.ANTHESI_ICE_CREAM)), CompatUtil.NEAPOLITAN);
+    public static final RegistryObject<Item> ANTHESI_MILKSHAKE = registerCompatItem("anthesi_milkshake", () ->
+            new MilkshakeItem(new Item.Properties().food(OddFoods.ANTHESI_MILKSHAKE)), CompatUtil.NEAPOLITAN);
     public static final RegistryObject<Item> LACO_SORBET = registerCompatItem("laco_sorbet", () ->
             new IceCreamItem(new Item.Properties().food(OddFoods.ICE_CREAM)), CompatUtil.NEAPOLITAN);
+    public static final RegistryObject<Item> LACO_SLUSHIE = registerCompatItem("laco_slushie", () ->
+            new MilkshakeItem(new Item.Properties().food(OddFoods.MILKSHAKE)), CompatUtil.NEAPOLITAN);
     public static final RegistryObject<Item> MANDRAKE_ICE_CREAM = registerCompatItem("mandrake_ice_cream", () ->
             new IceCreamItem(new Item.Properties().food(OddFoods.ICE_CREAM)), CompatUtil.NEAPOLITAN);
+    public static final RegistryObject<Item> MANDRAKE_MILKSHAKE = registerCompatItem("mandrake_milkshake", () ->
+            new MilkshakeItem(new Item.Properties().food(OddFoods.MILKSHAKE)), CompatUtil.NEAPOLITAN);
+
 
     private static <T extends Item> RegistryObject<T> registerCompatItem(String name, Supplier<T> item, String modId) {
         if(FMLLoader.getLoadingModList().getModFileById(modId) != null) {

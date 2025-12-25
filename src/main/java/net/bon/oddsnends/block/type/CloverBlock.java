@@ -56,7 +56,7 @@ public class CloverBlock extends BushBlock implements BonemealableBlock {
         return Block.box(0, 0, 0, 16, 3, 16);
     }
 
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> p_272634_) {
-        p_272634_.add(new Property[]{CLOVERS});
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(new Property[]{CLOVERS});
     }
 }

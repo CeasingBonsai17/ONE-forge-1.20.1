@@ -1,8 +1,6 @@
 {
   "parent": "oddsnends:block/double_cross",
-  "render_type": "minecraft:cutout",
   "textures": {
-    "cross_top": "oddsnends:block/flax_crop_top_stage_4",
-    "cross_bottom": "oddsnends:block/flax_crop_bottom_stage_4"
+    "cross": "oddsnends:block/flax_flowers"
   }
 }
