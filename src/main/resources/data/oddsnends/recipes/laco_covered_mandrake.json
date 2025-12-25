@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oddsnends:laco_bar"
+    },
+    {
+      "item": "oddsnends:mandrake"
+    }
+  ],
+  "result": {
+    "item": "oddsnends:laco_covered_mandrake"
+  }
+}

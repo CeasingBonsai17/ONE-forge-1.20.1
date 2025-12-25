@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "anthesi_cake",
+  "ingredients": [
+    {
+      "item": "oddsnends:anthesi_cake_slice"
+    },
+    {
+      "item": "oddsnends:anthesi_cake_slice"
+    },
+    {
+      "item": "oddsnends:anthesi_cake_slice"
+    },
+    {
+      "item": "oddsnends:anthesi_cake_slice"
+    },
+    {
+      "item": "oddsnends:anthesi_cake_slice"
+    },
+    {
+      "item": "oddsnends:anthesi_cake_slice"
+    },
+    {
+      "item": "oddsnends:anthesi_cake_slice"
+    }
+  ],
+  "result": {
+    "item": "oddsnends:anthesi_cake"
+  }
+}

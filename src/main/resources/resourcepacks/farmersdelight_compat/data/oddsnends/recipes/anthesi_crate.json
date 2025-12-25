@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oddsnends:anthesi_fruit"
+    }
+  },
+  "result": {
+    "item": "oddsnends:anthesi_crate"
+  },
+  "show_notification": true
+}

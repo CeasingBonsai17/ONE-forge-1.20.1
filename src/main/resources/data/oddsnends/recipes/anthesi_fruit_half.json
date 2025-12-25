@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "oddsnends:anthesi_fruit"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "oddsnends:anthesi_fruit_half"
+  }
+}

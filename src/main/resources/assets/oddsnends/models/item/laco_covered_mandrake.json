@@ -1,0 +1,18 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "oddsnends:item/laco_covered_mandrake"
+	},
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-180, -90, 55],
+			"translation": [0, 4.5, 0.75],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-180, 90, -55],
+			"translation": [0, 4.5, 0.5],
+			"scale": [0.55, 0.55, 0.55]
+		}
+	}
+}

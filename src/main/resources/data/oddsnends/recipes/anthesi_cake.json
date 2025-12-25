@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "anthesi_cake",
+  "key": {
+    "O": {
+      "item": "minecraft:milk_bucket"
+    },
+    "D": {
+      "tag": "oddsnends:anthesi_fruit"
+    },
+    "S": {
+      "item": "minecraft:egg"
+    },
+    "N": {
+      "item": "minecraft:sugar"
+    },
+    "E": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "pattern": [
+    "SOS",
+    "NDN",
+    "EEE"
+  ],
+  "result": {
+    "item": "oddsnends:anthesi_cake"
+  },
+  "show_notification": true
+}

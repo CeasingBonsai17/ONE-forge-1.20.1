@@ -1,0 +1,26 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "oddsnends:block/anthesi_cake_top",
+		"1": "oddsnends:block/anthesi_cake_side",
+		"2": "oddsnends:block/anthesi_cake_bottom",
+		"3": "oddsnends:block/anthesi_cake_inside_1",
+		"particle": "oddsnends:block/anthesi_cake_top"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 1],
+			"to": [15, 8, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, 16]},
+			"faces": {
+				"north": {"uv": [1, 8, 13, 16], "texture": "#1"},
+				"east": {"uv": [1, 8, 15, 16], "texture": "#1"},
+				"south": {"uv": [3, 8, 15, 16], "texture": "#1"},
+				"west": {"uv": [15, 8, 1, 16], "texture": "#3"},
+				"up": {"uv": [1, 3, 15, 15], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [1, 15, 15, 3], "rotation": 90, "texture": "#2", "cullface": "down"}
+			}
+		}
+	]
+}

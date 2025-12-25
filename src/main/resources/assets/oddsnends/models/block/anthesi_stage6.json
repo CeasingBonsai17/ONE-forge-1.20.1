@@ -1,0 +1,6 @@
+{
+  "parent": "oddsnends:block/double_cross",
+  "textures": {
+    "cross": "oddsnends:block/anthesi_stage6"
+  }
+}

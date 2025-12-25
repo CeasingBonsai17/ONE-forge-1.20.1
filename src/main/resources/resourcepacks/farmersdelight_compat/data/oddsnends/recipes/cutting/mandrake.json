@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "oddsnends:mandrake"
+    }
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "oddsnends:peeled_mandrake"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

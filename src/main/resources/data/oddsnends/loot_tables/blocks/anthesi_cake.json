@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "oddsnends:anthesi_cake",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "oddsends:anthesi_cake",
+              "properties": {
+                "bites": "0"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "oddsnends:blocks/anthesi_cake"
+}

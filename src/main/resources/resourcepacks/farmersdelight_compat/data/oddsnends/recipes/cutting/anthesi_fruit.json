@@ -1,0 +1,21 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "oddsnends:anthesi_fruit"
+    }
+  ],
+  "result": [
+    {
+      "count": 1,
+      "item": "oddsnends:anthesi_pit"
+    },
+    {
+      "count": 2,
+      "item": "oddsnends:anthesi_fruit_half"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

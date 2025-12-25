@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "oddsnends:anthesi_cake"
+    }
+  ],
+  "result": [
+    {
+      "count": 7,
+      "item": "oddsnends:anthesi_cake_slice"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}
