@@ -1,12 +1,10 @@
 {
-  "advancements.husbandry.not_quite_soulroots.title": "不正确的灵魂之根",
+  "advancements.husbandry.not_quite_soulroots.title": "不完全是灵魂根",
   "advancements.husbandry.not_quite_soulroots.description": "用地牢里找到的种子种植曼德拉草",
   "subtitles.block.crop_block.fruit_pops": "水果：爆开",
 
   "creativetab.oddsnends": "农杂",
 
-  "item.oddsnends.anthesi_ice_cream": "Anthesi Ice Cream",
-  "block.oddsnends.anthesi_ice_cream_block": "Anthesi Ice Cream Block",
 
   "block.oddsnends.ciderine_blossom": "酒红橘花",
   "block.oddsnends.ciderine_crop": "酒红橘作物",
@@ -36,12 +34,25 @@
   "item.oddsnends.ciderine_cider_jar": "酒红橘酒罐",
   "block.oddsnends.ciderine_ice_cream_block": "酒红橘味冰激凌方块",
   "item.oddsnends.ciderine_ice_cream": "酒红橘味冰激凌",
+  "item.oddsnends.ciderine_milkshake": "酒红橘味奶昔",
   "item.oddsnends.minty_ciderine_ice_cream": "薄荷酒红橘味冰激凌",
 
   "block.oddsnends.ciderine_sapling": "酒红橘树苗",
-
   "block.oddsnends.ciderine_sign": "酒红橘木告示牌",
   "block.oddsnends.ciderine_hanging_sign": "悬挂式酒红橘木告示牌",
+
+  "block.oddsnends.wild_anthesi": "野生安息花果",
+  "item.oddsnends.anthesi_pit": "安息花果核",
+  "block.oddsnends.anthesi_crop": "安息花果作物",
+  "item.oddsnends.anthesi_fruit": "安息花果",
+  "item.oddsnends.anthesi_fruit_half": "切开的安息花果",
+  "block.oddsnends.anthesi_cake": "安息花果蛋糕",
+
+  "item.oddsnends.anthesi_cake_slice": "安息花果蛋糕切片",
+  "block.oddsnends.anthesi_crate": "箱装安息花果",
+  "item.oddsnends.anthesi_ice_cream": "安息花果味冰激凌",
+  "block.oddsnends.anthesi_ice_cream_block": "安息花果味冰激凌方块",
+  "item.oddsnends.anthesi_milkshake": "安息花果味奶昔",
 
   "block.oddsnends.flax_flowers": "亚麻花",
   "block.oddsnends.potted_flax": "亚麻花盆栽",
@@ -63,20 +74,21 @@
   "item.minecraft.splash_potion.effect.odd_bad_luck": "喷溅型霉运药水",
   "item.minecraft.lingering_potion.effect.odd_bad_luck": "滞留型霉运药水",
 
-  "block.oddsnends.wild_laco": "野生拉可",
-  "item.oddsnends.laco_beans": "拉可豆",
-  "item.oddsnends.candied_laco_bean": "蜜饯拉可豆",
-  "item.oddsnends.laco_bar": "拉可条",
-  "block.oddsnends.laco_tiles": "拉可瓦",
-  "block.oddsnends.laco_tile_stairs": "拉可瓦楼梯",
-  "block.oddsnends.laco_tile_slab": "拉可瓦台阶",
+  "block.oddsnends.wild_laco": "野生莲可",
+  "item.oddsnends.laco_beans": "莲可豆",
+  "item.oddsnends.candied_laco_bean": "蜜饯莲可豆",
+  "item.oddsnends.laco_bar": "莲可条",
+  "block.oddsnends.laco_tiles": "莲可瓦",
+  "block.oddsnends.laco_tile_stairs": "莲可瓦楼梯",
+  "block.oddsnends.laco_tile_slab": "莲可瓦台阶",
 
-  "block.oddsnends.laco_bean_bag": "拉可豆袋",
-  "block.oddsnends.laco_sorbet_block": "拉可味冰糕块",
-  "item.oddsnends.laco_sorbet": "拉可味冰糕",
+  "block.oddsnends.laco_bean_bag": "莲可豆袋",
+  "block.oddsnends.laco_sorbet_block": "莲可味冰糕块",
+  "item.oddsnends.laco_sorbet": "莲可味冰糕",
+  "item.oddsnends.laco_slushie": "莲可味思乐冰",
 
-  "block.oddsnends.algae": "藻叶",
-  "block.oddsnends.algae_crate": "箱装藻叶",
+  "block.oddsnends.algae": "藻",
+  "block.oddsnends.algae_crate": "箱装藻",
 
   "block.oddsnends.cave_branches": "洞穴树根",
 
@@ -92,6 +104,8 @@
   "block.oddsnends.peeled_mandrake_crate": "箱装去皮曼德拉草",
   "block.oddsnends.mandrake_ice_cream_block": "曼德拉草味冰激凌方块",
   "item.oddsnends.mandrake_ice_cream": "曼德拉草味冰激凌",
+  "item.oddsnends.mandrake_milkshake": "曼德拉草味奶昔",
+  "item.oddsnends.laco_covered_mandrake": "覆莲可曼德拉",
 
   "block.oddsnends.manastone": "魔石",
   "block.oddsnends.manastone_stairs": "魔石楼梯",
